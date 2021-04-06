@@ -1,4 +1,4 @@
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: heyoka
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/bluescarni/heyoka/archive/v{{ version }}.tar.gz
-  sha256: 198d7ac5fe3039835cae8568c64226cc34af2d8ba9570977fdab16697fbb1c8c
+  sha256: da0c8c4631d488a24513bcaefa3b29de96aa47dd19c644ee0f4f81b1c4aa946e
 
 build:
   number: 0
@@ -28,6 +28,7 @@ requirements:
     - llvm
     - boost-cpp
     - fmt
+    - spdlog
     - sleef
     - xtensor
     - xtensor-blas
