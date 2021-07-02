@@ -1,4 +1,4 @@
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 
 package:
   name: heyoka
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/bluescarni/heyoka/archive/v{{ version }}.tar.gz
-  sha256: 8a83b05a05bbb5e0f5da208d4d3c4b6f6deb77d8633b3b5cb61b9e5b69590d45
+  sha256: 5f04e3f0f0bb8faa597ed3d97adabc7e8359be822bb626a1cb2a21652ed7ae33
 
 build:
-  number: 1
+  number: 0
   run_exports:
     # SO name changes at minor rev bumps.
     - {{ pin_subpackage('heyoka', max_pin='x.x') }}
@@ -27,7 +27,9 @@ requirements:
     - llvmdev
     - llvm
     - boost-cpp
-    - fmt
+    # NOTE: this is temporary until the incompatibilites
+    # between spdlog and fmt 8 are solved upstream.
+    - fmt <8
     - spdlog
     - sleef
     - xtensor
