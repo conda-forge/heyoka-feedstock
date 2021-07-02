@@ -27,7 +27,9 @@ requirements:
     - llvmdev
     - llvm
     - boost-cpp
-    - fmt
+    # NOTE: this is temporary until the incompatibilites
+    # between spdlog and fmt 8 are solved upstream.
+    - fmt <8
     - spdlog
     - sleef
     - xtensor
