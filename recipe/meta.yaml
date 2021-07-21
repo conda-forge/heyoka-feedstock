@@ -22,6 +22,7 @@ requirements:
     - cmake <3.20
     - clang      # [win]
     - ninja      # [win]
+    - make       # [unix]
 
   host:
     - llvmdev
