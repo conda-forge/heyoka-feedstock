@@ -5,6 +5,8 @@ if [[ "$target_platform" == osx-* ]]; then
     # Workaround for missing C++17 feature when building the tests.
     # Also, workaround for compile issue on older OSX SDKs.
     export CXXFLAGS="$CXXFLAGS -DCATCH_CONFIG_NO_CPP17_UNCAUGHT_EXCEPTIONS -D_LIBCPP_DISABLE_AVAILABILITY"
+elif [[ "$target_platform" == linux-aarch64 ||  "$target_platform" == linux-ppc64le ]]; then
+    export ENABLE_MPPP=no
 else
     export ENABLE_MPPP=yes
 fi

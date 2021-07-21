@@ -35,7 +35,7 @@ requirements:
     - xtensor-blas
     - blas
     - blas-devel
-    - mppp  # [linux]
+    - mppp  # [linux and x86]
 
   run:
     - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
