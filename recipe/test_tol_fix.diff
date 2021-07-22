@@ -76,7 +76,7 @@ index 336722f..a06a665 100644
          }
      }
 diff --git a/test/taylor_sigmoid.cpp b/test/taylor_sigmoid.cpp
-index 6214313..9daa226 100644
+index 6214313..e17aadf 100644
 --- a/test/taylor_sigmoid.cpp
 +++ b/test/taylor_sigmoid.cpp
 @@ -80,7 +80,7 @@ void compare_batch_scalar(std::initializer_list<U> sys, unsigned opt_level, bool
@@ -84,7 +84,7 @@ index 6214313..9daa226 100644
  
              for (auto i = 2u; i < 8u; ++i) {
 -                REQUIRE(jet_scalar[i] == approximately(jet_batch[i * batch_size + batch_idx]));
-+                REQUIRE(jet_scalar[i] == approximately(jet_batch[i * batch_size + batch_idx], T(1000)));
++                REQUIRE(jet_scalar[i] == approximately(jet_batch[i * batch_size + batch_idx], T(10000)));
              }
          }
      }
