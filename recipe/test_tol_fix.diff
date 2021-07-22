@@ -1,8 +1,16 @@
 diff --git a/test/expression.cpp b/test/expression.cpp
-index 65cd677..cda8b59 100644
+index 65cd677..26d3a34 100644
 --- a/test/expression.cpp
 +++ b/test/expression.cpp
-@@ -89,25 +89,21 @@ void test_eval()
+@@ -14,6 +14,7 @@
+ #include <variant>
+ #include <vector>
+ 
++#include <heyoka/config.hpp>
+ #include <heyoka/exceptions.hpp>
+ #include <heyoka/expression.hpp>
+ #include <heyoka/llvm_state.hpp>
+@@ -89,25 +90,21 @@ void test_eval()
      // We test the implementation of all function.
      {
          std::unordered_map<std::string, T> in{{"x", T(0.125)}};
@@ -42,4 +50,41 @@ index 65cd677..cda8b59 100644
 +        REQUIRE(eval(square(x), in) == approximately(T(0.125) * T(0.125)));
          REQUIRE(eval(acosh(x + heyoka::expression(T(1.))), in) == approximately(acosh(T(1.125))));
          REQUIRE(eval(asinh(x), in) == approximately(asinh(T(0.125))));
+     }
+@@ -116,7 +113,10 @@ void test_eval()
+ TEST_CASE("eval")
+ {
+     test_eval<double>();
++
++#if !defined(HEYOKA_ARCH_PPC)
+     test_eval<long double>();
++#endif
+ 
+ #if defined(HEYOKA_HAVE_REAL128)
+     test_eval<mppp::real128>();
+diff --git a/test/taylor_pow.cpp b/test/taylor_pow.cpp
+index 336722f..a06a665 100644
+--- a/test/taylor_pow.cpp
++++ b/test/taylor_pow.cpp
+@@ -81,7 +81,7 @@ void compare_batch_scalar(std::initializer_list<U> sys, unsigned opt_level, bool
+             jptr_scalar(jet_scalar.data(), nullptr, nullptr);
+ 
+             for (auto i = 2u; i < 8u; ++i) {
+-                REQUIRE(jet_scalar[i] == approximately(jet_batch[i * batch_size + batch_idx]));
++                REQUIRE(jet_scalar[i] == approximately(jet_batch[i * batch_size + batch_idx], T(1000)));
+             }
+         }
+     }
+diff --git a/test/taylor_sigmoid.cpp b/test/taylor_sigmoid.cpp
+index 6214313..9daa226 100644
+--- a/test/taylor_sigmoid.cpp
++++ b/test/taylor_sigmoid.cpp
+@@ -80,7 +80,7 @@ void compare_batch_scalar(std::initializer_list<U> sys, unsigned opt_level, bool
+             jptr_scalar(jet_scalar.data(), nullptr, nullptr);
+ 
+             for (auto i = 2u; i < 8u; ++i) {
+-                REQUIRE(jet_scalar[i] == approximately(jet_batch[i * batch_size + batch_idx]));
++                REQUIRE(jet_scalar[i] == approximately(jet_batch[i * batch_size + batch_idx], T(1000)));
+             }
+         }
      }
