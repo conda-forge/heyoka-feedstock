@@ -19,5 +19,7 @@ spdlog:
 - 1.9.0
 target_platform:
 - win-64
+tbb_devel:
+- '2020'
 vc:
 - '14'

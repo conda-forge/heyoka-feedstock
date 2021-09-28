@@ -27,6 +27,8 @@ spdlog:
 - 1.9.0
 target_platform:
 - linux-ppc64le
+tbb_devel:
+- '2020'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
