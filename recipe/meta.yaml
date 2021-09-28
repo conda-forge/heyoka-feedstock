@@ -1,4 +1,4 @@
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 
 package:
   name: heyoka
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/bluescarni/heyoka/archive/v{{ version }}.tar.gz
-  sha256: 0f3157fe9cbff66a2b6c0c66b903cff54de3d1691630868e5e30bad47488d315
+  sha256: 5096a5592768938b3553d9d37827c3aaf993fd6ef8065e577b47758ed841e17b
 
 build:
   number: 0
@@ -35,7 +35,8 @@ requirements:
     - xtensor-blas
     - blas
     - blas-devel
-    - mppp  # [linux and x86]
+    - tbb-devel
+    - mppp  # [linux and (x86 or ppc64le)]
 
   run:
     - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
