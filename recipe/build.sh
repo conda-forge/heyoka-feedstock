@@ -13,8 +13,10 @@ fi
 
 if [[ "$target_platform" == linux-ppc64le ]]; then
     export ENABLE_IPO=no
+    export ENABLE_TESTS=no
 else
     export ENABLE_IPO=yes
+    export ENABLE_TESTS=yes
 fi
 
 mkdir build
@@ -25,7 +27,7 @@ cmake ${CMAKE_ARGS} \
     -DCMAKE_INSTALL_PREFIX=$PREFIX \
     -DCMAKE_PREFIX_PATH=$PREFIX \
     -DHEYOKA_WITH_MPPP=$ENABLE_MPPP \
-    -DHEYOKA_BUILD_TESTS=yes \
+    -DHEYOKA_BUILD_TESTS=$ENABLE_TESTS \
     -DHEYOKA_WITH_SLEEF=yes \
     -DHEYOKA_ENABLE_IPO=$ENABLE_IPO \
     -DBoost_NO_BOOST_CMAKE=ON \
@@ -34,8 +36,8 @@ cmake ${CMAKE_ARGS} \
 
 make -j${CPU_COUNT} VERBOSE=1
 
-if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" ]]; then
-    ctest -j${CPU_COUNT} -E vsop2013 --output-on-failure
+if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" && "$target_platform" != linux-ppc64le ]]; then
+    ctest -j${CPU_COUNT} --output-on-failure
 fi
 
 make install
