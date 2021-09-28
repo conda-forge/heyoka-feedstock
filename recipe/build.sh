@@ -35,7 +35,7 @@ cmake ${CMAKE_ARGS} \
 make -j${CPU_COUNT} VERBOSE=1
 
 if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" ]]; then
-ctest -j${CPU_COUNT} --output-on-failure
+    ctest -j${CPU_COUNT} -E vsop2013 --output-on-failure
 fi
 
 make install
