@@ -25,8 +25,11 @@ requirements:
     - make       # [unix]
 
   host:
-    - llvmdev
-    - llvm
+    # NOTE: temporarily pin LLVM
+    # as heyoka 0.15 does not support
+    # LLVM 13.
+    - llvmdev <13
+    - llvm <13
     - boost-cpp
     - fmt
     - spdlog
