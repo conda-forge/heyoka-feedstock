@@ -10,6 +10,10 @@ cxx_compiler:
 - vs2017
 fmt:
 - '8'
+llvm:
+- '12'
+llvmdev:
+- '12'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
@@ -23,3 +27,6 @@ tbb_devel:
 - '2021'
 vc:
 - '14'
+zip_keys:
+- - llvmdev
+  - llvm
