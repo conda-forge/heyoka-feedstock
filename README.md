@@ -138,6 +138,8 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-heyoka-green.svg)](https://anaconda.org/conda-forge/heyoka) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/heyoka.svg)](https://anaconda.org/conda-forge/heyoka) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/heyoka.svg)](https://anaconda.org/conda-forge/heyoka) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/heyoka.svg)](https://anaconda.org/conda-forge/heyoka) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-heyoka--llvm--11-green.svg)](https://anaconda.org/conda-forge/heyoka-llvm-11) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/heyoka-llvm-11.svg)](https://anaconda.org/conda-forge/heyoka-llvm-11) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/heyoka-llvm-11.svg)](https://anaconda.org/conda-forge/heyoka-llvm-11) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/heyoka-llvm-11.svg)](https://anaconda.org/conda-forge/heyoka-llvm-11) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-heyoka--llvm--12-green.svg)](https://anaconda.org/conda-forge/heyoka-llvm-12) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/heyoka-llvm-12.svg)](https://anaconda.org/conda-forge/heyoka-llvm-12) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/heyoka-llvm-12.svg)](https://anaconda.org/conda-forge/heyoka-llvm-12) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/heyoka-llvm-12.svg)](https://anaconda.org/conda-forge/heyoka-llvm-12) |
 
 Installing heyoka
 =================
@@ -149,10 +151,10 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `heyoka` can be installed with:
+Once the `conda-forge` channel has been enabled, `heyoka, heyoka-llvm-11, heyoka-llvm-12` can be installed with:
 
 ```
-conda install heyoka
+conda install heyoka heyoka-llvm-11 heyoka-llvm-12
 ```
 
 It is possible to list all of the versions of `heyoka` available on your platform with:
