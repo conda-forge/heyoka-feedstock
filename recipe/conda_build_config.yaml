@@ -4,3 +4,6 @@ llvmdev:
 llvm:
   - 11
   - 12
+zip_keys:
+  - llvmdev
+  - llvm
