@@ -12,16 +12,6 @@ matrix:
       arch: ppc64le
       dist: focal
 
-    - env: CONFIG=linux_ppc64le_llvm11llvmdev12 UPLOAD_PACKAGES=True PLATFORM=linux-ppc64le DOCKER_IMAGE=quay.io/condaforge/linux-anvil-ppc64le
-      os: linux
-      arch: ppc64le
-      dist: focal
-
-    - env: CONFIG=linux_ppc64le_llvm12llvmdev11 UPLOAD_PACKAGES=True PLATFORM=linux-ppc64le DOCKER_IMAGE=quay.io/condaforge/linux-anvil-ppc64le
-      os: linux
-      arch: ppc64le
-      dist: focal
-
     - env: CONFIG=linux_ppc64le_llvm12llvmdev12 UPLOAD_PACKAGES=True PLATFORM=linux-ppc64le DOCKER_IMAGE=quay.io/condaforge/linux-anvil-ppc64le
       os: linux
       arch: ppc64le

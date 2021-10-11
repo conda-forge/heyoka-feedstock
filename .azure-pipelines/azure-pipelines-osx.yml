@@ -11,23 +11,11 @@ jobs:
       osx_64_llvm11llvmdev11:
         CONFIG: osx_64_llvm11llvmdev11
         UPLOAD_PACKAGES: 'True'
-      osx_64_llvm11llvmdev12:
-        CONFIG: osx_64_llvm11llvmdev12
-        UPLOAD_PACKAGES: 'True'
-      osx_64_llvm12llvmdev11:
-        CONFIG: osx_64_llvm12llvmdev11
-        UPLOAD_PACKAGES: 'True'
       osx_64_llvm12llvmdev12:
         CONFIG: osx_64_llvm12llvmdev12
         UPLOAD_PACKAGES: 'True'
       osx_arm64_llvm11llvmdev11:
         CONFIG: osx_arm64_llvm11llvmdev11
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_llvm11llvmdev12:
-        CONFIG: osx_arm64_llvm11llvmdev12
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_llvm12llvmdev11:
-        CONFIG: osx_arm64_llvm12llvmdev11
         UPLOAD_PACKAGES: 'True'
       osx_arm64_llvm12llvmdev12:
         CONFIG: osx_arm64_llvm12llvmdev12
