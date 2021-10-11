@@ -1,7 +1,5 @@
 MACOSX_DEPLOYMENT_TARGET:
-- '10.14'
-MACOSX_SDK_VERSION:
-- '10.14'
+- '10.9'
 boost_cpp:
 - 1.74.0
 c_compiler:
@@ -18,6 +16,10 @@ cxx_compiler_version:
 - '11'
 fmt:
 - '8'
+llvm:
+- '12'
+llvmdev:
+- '12'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 pin_run_as_build:
