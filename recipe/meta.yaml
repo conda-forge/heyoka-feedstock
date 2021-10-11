@@ -11,6 +11,15 @@ source:
 build:
   number: 3
 
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+    - cmake <3.20
+    - clang      # [win]
+    - ninja      # [win]
+    - make       # [unix]
+
 outputs:
   - name: heyoka
     build:
@@ -19,14 +28,6 @@ outputs:
         - {{ pin_subpackage('heyoka', max_pin='x.x') }}
 
     requirements:
-      build:
-        - {{ compiler('c') }}
-        - {{ compiler('cxx') }}
-        - cmake <3.20
-        - clang      # [win]
-        - ninja      # [win]
-        - make       # [unix]
-
       host:
         - llvmdev
         - llvm
