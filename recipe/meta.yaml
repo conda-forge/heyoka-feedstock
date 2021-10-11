@@ -44,12 +44,12 @@ outputs:
     run:
       - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
 
-  # - name: heyoka-llvm-{{ llvmdev }}
-  #   requirements:
-  #     host:
-  #       - {{ pin_subpackage('heyoka', exact=True) }}
-  #     run:
-  #       - {{ pin_subpackage('heyoka', exact=True) }}
+  - name: heyoka-llvm-{{ llvmdev }}
+    requirements:
+      host:
+        - {{ pin_subpackage('heyoka', exact=True) }}
+      run:
+        - {{ pin_subpackage('heyoka', exact=True) }}
 
 test:
   commands:
