@@ -58,8 +58,7 @@ outputs:
         - {{ pin_subpackage('heyoka', exact=True) }}
     test:
       commands:
-        - test -f $PREFIX/include/heyoka/heyoka.hpp               # [unix]
-        - if not exist %PREFIX%\\Library\\include\\heyoka\\heyoka.hpp exit 1   # [win]
+        - test true               # [unix]
 
 about:
   home: https://bluescarni.github.io/heyoka/
