@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [[ "$target_platform" == osx-* ]]; then
+    # Workaround for compile issue on older OSX SDKs.
+    export CXXFLAGS="$CXXFLAGS -fno-aligned-allocation"
+fi
+
 # mp++ setup.
 if [[ "$target_platform" == osx-* || "$target_platform" == linux-aarch64 ]]; then
     export ENABLE_MPPP=no
