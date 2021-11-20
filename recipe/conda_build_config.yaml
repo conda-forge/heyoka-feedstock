@@ -7,3 +7,7 @@ llvm:
 zip_keys:
   - llvmdev
   - llvm
+c_compiler:
+- vs2019
+cxx_compiler:
+- vs2019
