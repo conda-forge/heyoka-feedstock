@@ -2,10 +2,7 @@ mkdir build
 cd build
 
 cmake ^
-    -G "Ninja" ^
-    -DCMAKE_C_COMPILER=clang-cl ^
-    -DCMAKE_CXX_COMPILER=clang-cl ^
-    -DCMAKE_BUILD_TYPE=Release ^
+    -G "Visual Studio 16 2019" -A x64 ^
     -DCMAKE_PREFIX_PATH=%LIBRARY_PREFIX% ^
     -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
     -DHEYOKA_BUILD_TESTS=yes ^
@@ -14,10 +11,10 @@ cmake ^
     -DBoost_NO_BOOST_CMAKE=ON ^
     ..
 
-cmake --build . -- -v
+cmake --build . --config Release
 
-set PATH=%PATH%;%CD%
+set PATH=%PATH%;%CD%\Release
 
-ctest --output-on-failure -j${CPU_COUNT}
+ctest --output-on-failure -j${CPU_COUNT} -V -C Release
 
-cmake --build . --target install
+cmake --build . --config Release --target install
