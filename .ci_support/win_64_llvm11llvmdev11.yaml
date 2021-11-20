@@ -23,8 +23,6 @@ target_platform:
 - win-64
 tbb_devel:
 - '2021'
-vc:
-- '14'
 zip_keys:
 - - llvmdev
   - llvm
