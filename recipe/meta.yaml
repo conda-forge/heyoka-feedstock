@@ -13,7 +13,6 @@ build:
   run_exports:
     # SO name changes at minor rev bumps.
     - {{ pin_subpackage('heyoka', max_pin='x.x') }}
-  skip: true  # [win and vc<14]
 
 requirements:
   build:
