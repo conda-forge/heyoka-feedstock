@@ -1,12 +1,12 @@
-llvmdev:  # [not win]
+llvmdev:
   - 11  # [not win]
-  - 12  # [not win]
-llvm:  # [not win]
+  - 12
+llvm:
   - 11  # [not win]
-  - 12  # [not win]
-zip_keys:  # [not win]
-  - llvmdev  # [not win]
-  - llvm  # [not win]
+  - 12
+zip_keys:
+  - llvmdev
+  - llvm
 c_compiler:                    # [win]
 - vs2019                       # [win]
 cxx_compiler:                  # [win]
