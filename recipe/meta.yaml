@@ -1,7 +1,7 @@
 {% set version = "0.16.0" %}
 
 package:
-  name: heyoka-split
+  name: heyoka
   version: {{ version }}
 
 source:
