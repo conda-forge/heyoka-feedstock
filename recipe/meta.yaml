@@ -41,7 +41,7 @@ outputs:
         # SO name changes at minor rev bumps.
         - {{ pin_subpackage('heyoka', max_pin='x.x') }}
     files:
-      - *
+      - \*.\*
     test:
       commands:
         - test -f $PREFIX/include/heyoka/heyoka.hpp               # [unix]
