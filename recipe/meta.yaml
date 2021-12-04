@@ -41,7 +41,7 @@ outputs:
         # SO name changes at minor rev bumps.
         - {{ pin_subpackage('heyoka', max_pin='x.x') }}
     files:
-      - \*.\*
+      - "*.*"
     test:
       commands:
         - test -f $PREFIX/include/heyoka/heyoka.hpp               # [unix]
@@ -49,6 +49,18 @@ outputs:
   - name: heyoka-llvm-{{ llvmdev }}
     requirements:
       host:
+        - llvmdev
+        - llvm
+        - boost-cpp
+        - fmt
+        - spdlog
+        - sleef
+        - xtensor
+        - xtensor-blas
+        - blas
+        - blas-devel
+        - tbb-devel
+        - mppp  # [linux and (x86 or ppc64le)]
         - {{ pin_subpackage('heyoka', exact=True) }}
       run:
         - {{ pin_subpackage('heyoka', exact=True) }}
