@@ -63,6 +63,7 @@ outputs:
         - mppp  # [linux and (x86 or ppc64le)]
         - {{ pin_subpackage('heyoka', exact=True) }}
       run:
+        - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
         - {{ pin_subpackage('heyoka', exact=True) }}
     test:
       commands:
