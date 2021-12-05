@@ -41,7 +41,15 @@ outputs:
         # SO name changes at minor rev bumps.
         - {{ pin_subpackage('heyoka', max_pin='x.x') }}
     files:
-      - "*/*"
+      - lib/libheyoka*{{ SHLIB_EXT }}   # [not win]
+      - lib/libheyoka.so.*              # [linux]
+      - lib/libheyoka.*.dylib           # [osx]
+      - Library/bin/heyoka.dll          # [win]
+      - include/heyoka                  # [not win]
+      - lib/cmake/heyoka                # [not win]
+      - Library/include/heyoka          # [win]
+      - Library/lib/heyoka.lib          # [win]
+      - Library/lib/cmake/heyoka        # [win]
     test:
       commands:
         - test -f $PREFIX/include/heyoka/heyoka.hpp               # [unix]
