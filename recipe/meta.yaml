@@ -9,10 +9,7 @@ source:
   sha256: b58ac688d2cf7d6b67b0ec1adcda41568a87d98dfaae840acdd1b21c4eb3ee14
 
 build:
-  number: 0
-  run_exports:
-    # SO name changes at minor rev bumps.
-    - {{ pin_subpackage('heyoka', max_pin='x.x') }}
+  number: 1
 
 requirements:
   build:
@@ -21,27 +18,56 @@ requirements:
     - cmake
     - make       # [unix]
 
-  host:
-    - llvmdev
-    - llvm
-    - boost-cpp
-    - fmt
-    - spdlog
-    - sleef
-    - xtensor
-    - xtensor-blas
-    - blas
-    - blas-devel
-    - tbb-devel
-    - mppp  # [linux and (x86 or ppc64le)]
-
-  run:
-    - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
-
-test:
-  commands:
-    - test -f $PREFIX/include/heyoka/heyoka.hpp               # [unix]
-    - if not exist %PREFIX%\\Library\\include\\heyoka\\heyoka.hpp exit 1   # [win]
+outputs:
+  - name: heyoka
+    requirements:
+      host:
+        - llvmdev
+        - llvm
+        - boost-cpp
+        - fmt
+        - spdlog
+        - sleef
+        - xtensor
+        - xtensor-blas
+        - blas
+        - blas-devel
+        - tbb-devel
+        - mppp  # [linux and (x86 or ppc64le)]
+      run:
+        - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
+    build:
+      run_exports:
+        # SO name changes at minor rev bumps.
+        - {{ pin_subpackage('heyoka', max_pin='x.x') }}
+    files:
+      - "*.*"
+    test:
+      commands:
+        - test -f $PREFIX/include/heyoka/heyoka.hpp               # [unix]
+        - if not exist %PREFIX%\\Library\\include\\heyoka\\heyoka.hpp exit 1   # [win]
+  - name: heyoka-llvm-{{ llvmdev }}
+    requirements:
+      host:
+        - llvmdev
+        - llvm
+        - boost-cpp
+        - fmt
+        - spdlog
+        - sleef
+        - xtensor
+        - xtensor-blas
+        - blas
+        - blas-devel
+        - tbb-devel
+        - mppp  # [linux and (x86 or ppc64le)]
+        - {{ pin_subpackage('heyoka', exact=True) }}
+      run:
+        - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
+        - {{ pin_subpackage('heyoka', exact=True) }}
+    test:
+      commands:
+        - test true               # [unix]
 
 about:
   home: https://bluescarni.github.io/heyoka/
