@@ -9,7 +9,7 @@ source:
   sha256: b58ac688d2cf7d6b67b0ec1adcda41568a87d98dfaae840acdd1b21c4eb3ee14
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
@@ -72,6 +72,9 @@ outputs:
         - {{ pin_subpackage('heyoka', exact=True) }}
       run:
         - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
+        - {{ pin_subpackage('heyoka', exact=True) }}
+    build:
+      run_exports:
         - {{ pin_subpackage('heyoka', exact=True) }}
     test:
       commands:
