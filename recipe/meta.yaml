@@ -75,8 +75,7 @@ outputs:
         - {{ pin_subpackage('heyoka', exact=True) }}
     build:
       run_exports:
-        # SO name changes at minor rev bumps.
-        - {{ pin_subpackage('heyoka-llvm-{{ llvmdev }}', max_pin='x.x') }}
+        - {{ pin_subpackage('heyoka', exact=True) }}
     test:
       commands:
         - test true               # [unix]
