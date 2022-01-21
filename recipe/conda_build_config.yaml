@@ -1,9 +1,11 @@
 llvmdev:
   - 11  # [not win]
   - 12
+  - 13
 llvm:
   - 11  # [not win]
   - 12
+  - 13
 zip_keys:
   - llvmdev
   - llvm
