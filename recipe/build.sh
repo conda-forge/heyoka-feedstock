@@ -56,7 +56,7 @@ cmake ${CMAKE_ARGS} \
 
 make -j${CPU_COUNT} VERBOSE=1
 
-if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" && "$target_platform" != linux-ppc64le && "$target_platform" != linux-aarch64 ]]; then
+if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" && "$target_platform" != linux-ppc64le && "$target_platform" != linux-aarch64 && "$target_platform" != osx-* ]]; then
     ctest -j${CPU_COUNT} --output-on-failure
 fi
 
