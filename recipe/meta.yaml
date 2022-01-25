@@ -27,13 +27,13 @@ outputs:
         - boost-cpp
         - fmt
         - spdlog
-        - sleef  # [not osx]
-        - xtensor
-        - xtensor-blas
-        - blas
-        - blas-devel
         - tbb-devel
-        - mppp  # [linux and (x86 or ppc64le)]
+        - sleef         # [not osx]
+        - xtensor       # [not osx]
+        - xtensor-blas  # [not osx]
+        - blas          # [not osx]
+        - blas-devel    # [not osx]
+        - mppp          # [linux and (x86 or ppc64le)]
       run:
         - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
     build:
@@ -62,13 +62,13 @@ outputs:
         - boost-cpp
         - fmt
         - spdlog
-        - sleef
-        - xtensor
-        - xtensor-blas
-        - blas
-        - blas-devel
         - tbb-devel
-        - mppp  # [linux and (x86 or ppc64le)]
+        - sleef         # [not osx]
+        - xtensor       # [not osx]
+        - xtensor-blas  # [not osx]
+        - blas          # [not osx]
+        - blas-devel    # [not osx]
+        - mppp          # [linux and (x86 or ppc64le)]
         - {{ pin_subpackage('heyoka', exact=True) }}
       run:
         - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
