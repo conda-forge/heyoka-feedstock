@@ -9,7 +9,7 @@ source:
   sha256: 7e667bba4d7200786b1e2e4e3e3a347b4c1db1beabd850a8d96e19c644d79a1c
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -27,13 +27,13 @@ outputs:
         - boost-cpp
         - fmt
         - spdlog
-        - sleef
-        - xtensor
-        - xtensor-blas
-        - blas
-        - blas-devel
         - tbb-devel
-        - mppp  # [linux and (x86 or ppc64le)]
+        - sleef         # [not osx]
+        - xtensor       # [not osx]
+        - xtensor-blas  # [not osx]
+        - blas          # [not osx]
+        - blas-devel    # [not osx]
+        - mppp          # [linux and (x86 or ppc64le)]
       run:
         - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
     build:
@@ -62,13 +62,13 @@ outputs:
         - boost-cpp
         - fmt
         - spdlog
-        - sleef
-        - xtensor
-        - xtensor-blas
-        - blas
-        - blas-devel
         - tbb-devel
-        - mppp  # [linux and (x86 or ppc64le)]
+        - sleef         # [not osx]
+        - xtensor       # [not osx]
+        - xtensor-blas  # [not osx]
+        - blas          # [not osx]
+        - blas-devel    # [not osx]
+        - mppp          # [linux and (x86 or ppc64le)]
         - {{ pin_subpackage('heyoka', exact=True) }}
       run:
         - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
