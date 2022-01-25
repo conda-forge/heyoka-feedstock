@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 if [[ "$target_platform" == osx-* ]]; then
-    # Workaround for compile issue on older OSX SDKs.
-    export CXXFLAGS="$CXXFLAGS -fno-aligned-allocation"
+    # Workaround for compile issues on older OSX SDKs.
+    export CXXFLAGS="$CXXFLAGS -fno-aligned-allocation -DCATCH_CONFIG_NO_CPP17_UNCAUGHT_EXCEPTIONS -D_LIBCPP_DISABLE_AVAILABILITY"
 fi
 
 # mp++ setup.
@@ -33,12 +33,6 @@ else
     export ENABLE_TESTS=yes
 fi
 
-# Workaround for missing C++17 feature when building the tests.
-# Also, workaround for compile issue on older OSX SDKs.
-if [[ "$target_platform" == osx-* ]]; then
-    export CXXFLAGS="$CXXFLAGS -DCATCH_CONFIG_NO_CPP17_UNCAUGHT_EXCEPTIONS -D_LIBCPP_DISABLE_AVAILABILITY"
-fi
-
 mkdir build
 cd build
 
@@ -56,7 +50,7 @@ cmake ${CMAKE_ARGS} \
 
 make -j${CPU_COUNT} VERBOSE=1
 
-if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" && "$target_platform" != linux-ppc64le && "$target_platform" != linux-aarch64 && "$target_platform" != osx-* ]]; then
+if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" && "$ENABLE_TESTS" == yes ]]; then
     ctest -j${CPU_COUNT} --output-on-failure
 fi
 
