@@ -12,6 +12,13 @@ else
     export ENABLE_MPPP=yes
 fi
 
+# SLEEF setup.
+if [[ "$target_platform" == osx-* ]]; then
+    export ENABLE_SLEEF=no
+else
+    export ENABLE_SLEEF=yes
+fi
+
 # IPO setup.
 if [[ "$target_platform" == linux-ppc64le ]]; then
     export ENABLE_IPO=no
@@ -41,7 +48,7 @@ cmake ${CMAKE_ARGS} \
     -DCMAKE_PREFIX_PATH=$PREFIX \
     -DHEYOKA_WITH_MPPP=$ENABLE_MPPP \
     -DHEYOKA_BUILD_TESTS=$ENABLE_TESTS \
-    -DHEYOKA_WITH_SLEEF=yes \
+    -DHEYOKA_WITH_SLEEF=$ENABLE_SLEEF \
     -DHEYOKA_ENABLE_IPO=$ENABLE_IPO \
     -DBoost_NO_BOOST_CMAKE=ON \
     -DHEYOKA_INSTALL_LIBDIR=lib \
