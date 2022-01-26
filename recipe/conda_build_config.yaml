@@ -9,7 +9,7 @@ llvm:
 zip_keys:
   - llvmdev
   - llvm
-c_compiler:                    # [win]
-- vs2019                       # [win]
-cxx_compiler:                  # [win]
-- vs2019                       # [win]
+c_compiler_version:            # [linux]
+  - 10                         # [linux]
+cxx_compiler_version:          # [linux]
+  - 10                         # [linux]
