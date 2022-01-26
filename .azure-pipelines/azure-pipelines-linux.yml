@@ -32,6 +32,18 @@ jobs:
         CONFIG: linux_aarch64_llvm13llvmdev13
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64
+      linux_ppc64le_llvm11llvmdev11:
+        CONFIG: linux_ppc64le_llvm11llvmdev11
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-ppc64le
+      linux_ppc64le_llvm12llvmdev12:
+        CONFIG: linux_ppc64le_llvm12llvmdev12
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-ppc64le
+      linux_ppc64le_llvm13llvmdev13:
+        CONFIG: linux_ppc64le_llvm13llvmdev13
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-ppc64le
   timeoutInMinutes: 360
 
   steps:
