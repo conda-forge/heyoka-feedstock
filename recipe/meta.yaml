@@ -28,7 +28,7 @@ outputs:
         # NOTE: pin fmt/spdlog versions
         # so that there is only one version of fmt.
         - fmt =8.1.*
-        - spdlog =1.10.*
+        - spdlog =1.10.0
         - tbb-devel
         - sleef         # [not osx]
         - xtensor       # [not osx]
@@ -63,7 +63,7 @@ outputs:
         - llvm
         - boost-cpp
         - fmt =8.1.*
-        - spdlog =1.10.*
+        - spdlog =1.10.0
         - tbb-devel
         - sleef         # [not osx]
         - xtensor       # [not osx]
