@@ -15,9 +15,9 @@ cxx_compiler:
 cxx_compiler_version:
 - '13'
 llvm:
-- '12'
+- '14'
 llvmdev:
-- '12'
+- '14'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 pin_run_as_build:

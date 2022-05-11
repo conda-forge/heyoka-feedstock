@@ -20,6 +20,10 @@ jobs:
         CONFIG: linux_64_llvm13llvmdev13
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_llvm14llvmdev14:
+        CONFIG: linux_64_llvm14llvmdev14
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_aarch64_llvm11llvmdev11:
         CONFIG: linux_aarch64_llvm11llvmdev11
         UPLOAD_PACKAGES: 'True'
@@ -32,6 +36,10 @@ jobs:
         CONFIG: linux_aarch64_llvm13llvmdev13
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_aarch64_llvm14llvmdev14:
+        CONFIG: linux_aarch64_llvm14llvmdev14
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_ppc64le_llvm11llvmdev11:
         CONFIG: linux_ppc64le_llvm11llvmdev11
         UPLOAD_PACKAGES: 'True'
@@ -42,6 +50,10 @@ jobs:
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_ppc64le_llvm13llvmdev13:
         CONFIG: linux_ppc64le_llvm13llvmdev13
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_ppc64le_llvm14llvmdev14:
+        CONFIG: linux_ppc64le_llvm14llvmdev14
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
   timeoutInMinutes: 360
