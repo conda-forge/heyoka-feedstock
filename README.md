@@ -30,161 +30,161 @@ Current build status
               <td>linux_64_llvm11llvmdev11</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux_64_llvm11llvmdev11" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_llvm11llvmdev11" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_llvm12llvmdev12</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux_64_llvm12llvmdev12" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_llvm12llvmdev12" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_llvm13llvmdev13</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux_64_llvm13llvmdev13" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_llvm13llvmdev13" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_llvm14llvmdev14</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux_64_llvm14llvmdev14" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_llvm14llvmdev14" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_aarch64_llvm11llvmdev11</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_llvm11llvmdev11" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_llvm11llvmdev11" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_aarch64_llvm12llvmdev12</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_llvm12llvmdev12" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_llvm12llvmdev12" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_aarch64_llvm13llvmdev13</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_llvm13llvmdev13" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_llvm13llvmdev13" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_aarch64_llvm14llvmdev14</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_llvm14llvmdev14" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_llvm14llvmdev14" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_ppc64le_llvm11llvmdev11</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_llvm11llvmdev11" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_llvm11llvmdev11" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_ppc64le_llvm12llvmdev12</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_llvm12llvmdev12" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_llvm12llvmdev12" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_ppc64le_llvm13llvmdev13</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_llvm13llvmdev13" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_llvm13llvmdev13" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_ppc64le_llvm14llvmdev14</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_llvm14llvmdev14" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_llvm14llvmdev14" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_llvm11llvmdev11</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx_64_llvm11llvmdev11" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_llvm11llvmdev11" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_llvm12llvmdev12</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx_64_llvm12llvmdev12" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_llvm12llvmdev12" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_llvm13llvmdev13</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx_64_llvm13llvmdev13" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_llvm13llvmdev13" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_llvm14llvmdev14</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx_64_llvm14llvmdev14" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_llvm14llvmdev14" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_llvm11llvmdev11</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_llvm11llvmdev11" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_llvm11llvmdev11" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_llvm12llvmdev12</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_llvm12llvmdev12" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_llvm12llvmdev12" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_llvm13llvmdev13</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_llvm13llvmdev13" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_llvm13llvmdev13" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_llvm14llvmdev14</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_llvm14llvmdev14" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_llvm14llvmdev14" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_llvm12llvmdev12</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=win&configuration=win_64_llvm12llvmdev12" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=win&configuration=win%20win_64_llvm12llvmdev12" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_llvm13llvmdev13</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=win&configuration=win_64_llvm13llvmdev13" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=win&configuration=win%20win_64_llvm13llvmdev13" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64_llvm14llvmdev14</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=win&configuration=win_64_llvm14llvmdev14" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=win&configuration=win%20win_64_llvm14llvmdev14" alt="variant">
                 </a>
               </td>
             </tr>
