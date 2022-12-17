@@ -55,6 +55,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_64_llvm15llvmdev15</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_llvm15llvmdev15" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_aarch64_llvm11llvmdev11</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
@@ -80,6 +87,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_llvm14llvmdev14" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_llvm15llvmdev15</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_llvm15llvmdev15" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -111,6 +125,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_ppc64le_llvm15llvmdev15</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_llvm15llvmdev15" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_llvm11llvmdev11</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
@@ -139,6 +160,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_64_llvm15llvmdev15</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_llvm15llvmdev15" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_arm64_llvm11llvmdev11</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
@@ -164,6 +192,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_llvm14llvmdev14" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_llvm15llvmdev15</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_llvm15llvmdev15" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -205,6 +240,7 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-heyoka--llvm--12-green.svg)](https://anaconda.org/conda-forge/heyoka-llvm-12) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/heyoka-llvm-12.svg)](https://anaconda.org/conda-forge/heyoka-llvm-12) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/heyoka-llvm-12.svg)](https://anaconda.org/conda-forge/heyoka-llvm-12) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/heyoka-llvm-12.svg)](https://anaconda.org/conda-forge/heyoka-llvm-12) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-heyoka--llvm--13-green.svg)](https://anaconda.org/conda-forge/heyoka-llvm-13) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/heyoka-llvm-13.svg)](https://anaconda.org/conda-forge/heyoka-llvm-13) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/heyoka-llvm-13.svg)](https://anaconda.org/conda-forge/heyoka-llvm-13) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/heyoka-llvm-13.svg)](https://anaconda.org/conda-forge/heyoka-llvm-13) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-heyoka--llvm--14-green.svg)](https://anaconda.org/conda-forge/heyoka-llvm-14) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/heyoka-llvm-14.svg)](https://anaconda.org/conda-forge/heyoka-llvm-14) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/heyoka-llvm-14.svg)](https://anaconda.org/conda-forge/heyoka-llvm-14) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/heyoka-llvm-14.svg)](https://anaconda.org/conda-forge/heyoka-llvm-14) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-heyoka--llvm--15-green.svg)](https://anaconda.org/conda-forge/heyoka-llvm-15) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/heyoka-llvm-15.svg)](https://anaconda.org/conda-forge/heyoka-llvm-15) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/heyoka-llvm-15.svg)](https://anaconda.org/conda-forge/heyoka-llvm-15) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/heyoka-llvm-15.svg)](https://anaconda.org/conda-forge/heyoka-llvm-15) |
 
 Installing heyoka
 =================
@@ -216,16 +252,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `heyoka, heyoka-llvm-11, heyoka-llvm-12, heyoka-llvm-13, heyoka-llvm-14` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `heyoka, heyoka-llvm-11, heyoka-llvm-12, heyoka-llvm-13, heyoka-llvm-14, heyoka-llvm-15` can be installed with `conda`:
 
 ```
-conda install heyoka heyoka-llvm-11 heyoka-llvm-12 heyoka-llvm-13 heyoka-llvm-14
+conda install heyoka heyoka-llvm-11 heyoka-llvm-12 heyoka-llvm-13 heyoka-llvm-14 heyoka-llvm-15
 ```
 
 or with `mamba`:
 
 ```
-mamba install heyoka heyoka-llvm-11 heyoka-llvm-12 heyoka-llvm-13 heyoka-llvm-14
+mamba install heyoka heyoka-llvm-11 heyoka-llvm-12 heyoka-llvm-13 heyoka-llvm-14 heyoka-llvm-15
 ```
 
 It is possible to list all of the versions of `heyoka` available on your platform with `conda`:

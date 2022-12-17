@@ -19,9 +19,9 @@ docker_image:
 fmt:
 - '9'
 llvm:
-- '13'
+- '15'
 llvmdev:
-- '13'
+- '15'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
