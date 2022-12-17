@@ -23,7 +23,6 @@ outputs:
     requirements:
       host:
         - llvmdev
-        - llvm
         - boost-cpp
         - fmt
         - spdlog
@@ -62,7 +61,6 @@ outputs:
     requirements:
       host:
         - llvmdev
-        - llvm
         - boost-cpp
         - fmt
         - spdlog
