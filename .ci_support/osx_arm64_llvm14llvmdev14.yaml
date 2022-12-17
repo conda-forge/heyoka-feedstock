@@ -16,12 +16,16 @@ cxx_compiler_version:
 - '14'
 fmt:
 - '9'
+gmp:
+- '6'
 llvm:
 - '14'
 llvmdev:
 - '14'
 macos_machine:
 - arm64-apple-darwin20.0.0
+mpfr:
+- '4'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
@@ -36,3 +40,5 @@ zip_keys:
   - cxx_compiler_version
 - - llvmdev
   - llvm
+zlib:
+- '1.2'

@@ -8,6 +8,7 @@ cmake ^
     -DHEYOKA_BUILD_TESTS=yes ^
     -DHEYOKA_ENABLE_IPO=yes ^
     -DHEYOKA_WITH_SLEEF=yes ^
+    -DHEYOKA_WITH_MPPP=yes ^
     -DBoost_NO_BOOST_CMAKE=ON ^
     ..
 

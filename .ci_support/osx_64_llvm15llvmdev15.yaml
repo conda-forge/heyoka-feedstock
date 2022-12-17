@@ -21,9 +21,9 @@ fmt:
 gmp:
 - '6'
 llvm:
-- '12'
+- '15'
 llvmdev:
-- '12'
+- '15'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 mpfr:

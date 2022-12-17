@@ -14,6 +14,8 @@ llvm:
 - '14'
 llvmdev:
 - '14'
+mpfr:
+- '4'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
