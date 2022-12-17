@@ -34,8 +34,8 @@ outputs:
         - blas          # [not osx]
         - blas-devel    # [not osx]
         - mppp >=0.27
-        - zlib          # [win]
-        - libzlib       # [win]
+        - zlib
+        - libzlib
       run:
         - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
     build:
@@ -71,8 +71,8 @@ outputs:
         - blas          # [not osx]
         - blas-devel    # [not osx]
         - mppp >=0.27
-        - zlib          # [win]
-        - libzlib       # [win]
+        - zlib
+        - libzlib
         - {{ pin_subpackage('heyoka', exact=True) }}
       run:
         - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
