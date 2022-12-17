@@ -11,9 +11,11 @@ cxx_compiler:
 fmt:
 - '9'
 llvm:
-- '14'
+- '12'
 llvmdev:
-- '14'
+- '12'
+mpfr:
+- '4'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x

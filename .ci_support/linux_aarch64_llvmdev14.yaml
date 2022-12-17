@@ -22,10 +22,14 @@ docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 fmt:
 - '9'
+gmp:
+- '6'
 llvm:
-- '15'
+- '14'
 llvmdev:
-- '15'
+- '14'
+mpfr:
+- '4'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x

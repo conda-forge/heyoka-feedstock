@@ -5,7 +5,7 @@ c_compiler:
 c_compiler_version:
 - '11'
 cdt_name:
-- cos6
+- cos7
 channel_sources:
 - conda-forge
 channel_targets:
@@ -18,17 +18,21 @@ docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 fmt:
 - '9'
+gmp:
+- '6'
 llvm:
-- '11'
+- '13'
 llvmdev:
-- '11'
+- '13'
+mpfr:
+- '4'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
 spdlog:
 - '1.11'
 target_platform:
-- linux-64
+- linux-ppc64le
 tbb_devel:
 - '2021'
 zip_keys:
@@ -36,5 +40,3 @@ zip_keys:
   - cxx_compiler_version
 - - llvmdev
   - llvm
-zlib:
-- '1.2'

@@ -1,5 +1,5 @@
 MACOSX_DEPLOYMENT_TARGET:
-- '11.0'
+- '10.9'
 boost_cpp:
 - 1.78.0
 c_compiler:
@@ -16,19 +16,23 @@ cxx_compiler_version:
 - '14'
 fmt:
 - '9'
+gmp:
+- '6'
 llvm:
-- '15'
+- '14'
 llvmdev:
-- '15'
+- '14'
 macos_machine:
-- arm64-apple-darwin20.0.0
+- x86_64-apple-darwin13.4.0
+mpfr:
+- '4'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
 spdlog:
 - '1.11'
 target_platform:
-- osx-arm64
+- osx-64
 tbb_devel:
 - '2021'
 zip_keys:
