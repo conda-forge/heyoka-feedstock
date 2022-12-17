@@ -1,4 +1,4 @@
-{% set version = "0.19.0" %}
+{% set version = "0.20.0" %}
 
 package:
   name: heyoka
@@ -6,16 +6,16 @@ package:
 
 source:
   url: https://github.com/bluescarni/heyoka/archive/v{{ version }}.tar.gz
-  sha256: 7a7634379233be778fd6b15090df287787cc429314ec521d0336cdc1ae26642a
+  sha256: d6b4601ee28fc2dbb84c317bbe2619c776ce448f782c045a801dfa46b0d5e52c
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - cmake >=3.8.0
+    - cmake >=3.18.0
     - make       # [unix]
 
 outputs:
@@ -28,12 +28,12 @@ outputs:
         - fmt
         - spdlog
         - tbb-devel
-        - sleef         # [not osx]
+        - sleef
         - xtensor       # [not osx]
         - xtensor-blas  # [not osx]
         - blas          # [not osx]
         - blas-devel    # [not osx]
-        - mppp >=0.23   # [linux and (x86 or ppc64le)]
+        - mppp >=0.27
         - zlib          # [win]
         - libzlib       # [win]
       run:
@@ -65,12 +65,12 @@ outputs:
         - fmt
         - spdlog
         - tbb-devel
-        - sleef         # [not osx]
+        - sleef
         - xtensor       # [not osx]
         - xtensor-blas  # [not osx]
         - blas          # [not osx]
         - blas-devel    # [not osx]
-        - mppp >=0.23   # [linux and (x86 or ppc64le)]
+        - mppp >=0.27
         - zlib          # [win]
         - libzlib       # [win]
         - {{ pin_subpackage('heyoka', exact=True) }}

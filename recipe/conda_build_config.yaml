@@ -3,11 +3,13 @@ llvmdev:
   - 12
   - 13
   - 14
+  - 15  # [not win]
 llvm:
   - 11  # [not win]
   - 12
   - 13
   - 14
+  - 15  # [not win]
 zip_keys:
   - llvmdev
   - llvm
