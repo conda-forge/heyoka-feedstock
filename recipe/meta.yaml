@@ -11,6 +11,18 @@ source:
 build:
   number: 1
   ignore_run_exports_from:
+    # NOTE: on most platforms, except
+    # PPC64, we are forcing static linking
+    # to LLVM in a desperate attempt to hide
+    # LLVM symbols so that heyoka can coexist
+    # (maybe) with other libraries linking to
+    # different LLVM versions. On the other hand,
+    # the conda packages for llvm/llvmdev inject
+    # (on some platforms at least) a run_export()
+    # dependency under the assumption
+    # that dynamic linking is being used. We want to
+    # avoid that, as the whole point is to hide
+    # the presence of LLVM as much as possible.
     - llvmdev  # [not ppc64le]
     - llvm     # [not ppc64le]
 
@@ -28,6 +40,11 @@ outputs:
         - llvmdev
         - llvm
         - boost-cpp
+        # NOTE: this one is needed only
+        # on some platforms and LLVM versions.
+        # Just leave it everywhere even if
+        # it will result in some overlinking.
+        - zstd
         - fmt
         - spdlog
         - tbb-devel
@@ -68,6 +85,7 @@ outputs:
         - llvmdev
         - llvm
         - boost-cpp
+        - zstd
         - fmt
         - spdlog
         - tbb-devel
