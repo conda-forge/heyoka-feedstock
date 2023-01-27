@@ -9,7 +9,10 @@ source:
   sha256: 7abd68d319dd2740ca8440d41602ceefb45809d6fadbbf31728c5cb003511f8c
 
 build:
-  number: 0
+  number: 1
+  ignore_run_exports_from:
+    - llvmdev  # [not ppc64le]
+    - llvm     # [not ppc64le]
 
 requirements:
   build:
