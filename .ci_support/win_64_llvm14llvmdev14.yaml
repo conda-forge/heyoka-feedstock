@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - vs2019
 fmt:
-- '9'
+- '10'
 llvm:
 - '14'
 llvmdev:
