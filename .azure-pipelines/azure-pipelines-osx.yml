@@ -23,6 +23,9 @@ jobs:
       osx_64_llvm15llvmdev15:
         CONFIG: osx_64_llvm15llvmdev15
         UPLOAD_PACKAGES: 'True'
+      osx_64_llvm16llvmdev16:
+        CONFIG: osx_64_llvm16llvmdev16
+        UPLOAD_PACKAGES: 'True'
       osx_arm64_llvm11llvmdev11:
         CONFIG: osx_arm64_llvm11llvmdev11
         UPLOAD_PACKAGES: 'True'
@@ -37,6 +40,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_arm64_llvm15llvmdev15:
         CONFIG: osx_arm64_llvm15llvmdev15
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_llvm16llvmdev16:
+        CONFIG: osx_arm64_llvm16llvmdev16
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 
