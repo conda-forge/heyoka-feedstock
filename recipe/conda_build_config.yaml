@@ -13,12 +13,17 @@ llvm:
 zip_keys:
   - llvmdev
   - llvm
+# NOTE: need MSVC 2019 because MSVC 2022
+# gives an internal error when linking
+# the heyoka library.
 c_compiler:                    # [win]
 - vs2019                       # [win]
 cxx_compiler:                  # [win]
 - vs2019                       # [win]
 MACOSX_SDK_VERSION:        # [osx and x86_64]
   - "10.12"                # [osx and x86_64]
+# NOTE: need GCC 11 on ppc64 due to this Boost bug:
+# https://github.com/boostorg/multiprecision/issues/419
 c_compiler_version:        # [ppc64le]
   - 11                     # [ppc64le]
 cxx_compiler_version:      # [ppc64le]
