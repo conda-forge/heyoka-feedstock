@@ -17,9 +17,6 @@ jobs:
       win_64_llvm14llvmdev14:
         CONFIG: win_64_llvm14llvmdev14
         UPLOAD_PACKAGES: 'True'
-      win_64_llvm16llvmdev16:
-        CONFIG: win_64_llvm16llvmdev16
-        UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables:
     CONDA_BLD_PATH: D:\\bld\\
