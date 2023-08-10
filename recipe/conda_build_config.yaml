@@ -13,5 +13,13 @@ llvm:
 zip_keys:
   - llvmdev
   - llvm
+c_compiler:                    # [win]
+- vs2019                       # [win]
+cxx_compiler:                  # [win]
+- vs2019                       # [win]
 MACOSX_SDK_VERSION:        # [osx and x86_64]
   - "10.12"                # [osx and x86_64]
+c_compiler_version:        # [ppc64le]
+  - 11                     # [ppc64le]
+cxx_compiler_version:      # [ppc64le]
+  - 11                     # [ppc64le]

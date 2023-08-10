@@ -17,7 +17,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
 fmt:
-- '9'
+- '10'
 gmp:
 - '6'
 llvm:
@@ -30,7 +30,7 @@ pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
 spdlog:
-- '1.11'
+- '1.12'
 target_platform:
 - linux-ppc64le
 tbb_devel:
