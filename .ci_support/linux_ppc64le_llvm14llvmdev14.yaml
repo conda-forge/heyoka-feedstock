@@ -1,5 +1,3 @@
-boost_cpp:
-- 1.78.0
 c_compiler:
 - gcc
 c_compiler_version:
@@ -20,15 +18,14 @@ fmt:
 - '10'
 gmp:
 - '6'
+libboost_devel:
+- '1.82'
 llvm:
 - '14'
 llvmdev:
 - '14'
 mpfr:
 - '4'
-pin_run_as_build:
-  boost-cpp:
-    max_pin: x.x.x
 spdlog:
 - '1.12'
 target_platform:
