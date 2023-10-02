@@ -9,7 +9,7 @@ source:
   sha256: 418ce55557496d3ff1383e8b64663661d9b6a5f39dc7080e401d6537db0c4cd2
 
 build:
-  number: 0
+  number: 1
   ignore_run_exports_from:
     # NOTE: on most platforms, except
     # PPC64, we are forcing static linking
@@ -39,7 +39,7 @@ outputs:
       host:
         - llvmdev
         - llvm
-        - boost-cpp
+        - libboost-devel
         # NOTE: this one is needed only
         # on some platforms and LLVM versions.
         # Just leave it everywhere even if
@@ -59,7 +59,6 @@ outputs:
         - mppp >=0.27
         - zlib          # [not ppc64le]
       run:
-        - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
         - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
     build:
       run_exports:
@@ -84,7 +83,7 @@ outputs:
       host:
         - llvmdev
         - llvm
-        - boost-cpp
+        - libboost-devel
         - zstd
         - fmt
         - spdlog
@@ -101,7 +100,6 @@ outputs:
         - zlib          # [not ppc64le]
         - {{ pin_subpackage('heyoka', exact=True) }}
       run:
-        - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
         - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
         - {{ pin_subpackage('heyoka', exact=True) }}
     build:
