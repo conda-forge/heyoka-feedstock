@@ -8,12 +8,6 @@ jobs:
     vmImage: macOS-11
   strategy:
     matrix:
-      osx_64_llvm11llvmdev11:
-        CONFIG: osx_64_llvm11llvmdev11
-        UPLOAD_PACKAGES: 'True'
-      osx_64_llvm12llvmdev12:
-        CONFIG: osx_64_llvm12llvmdev12
-        UPLOAD_PACKAGES: 'True'
       osx_64_llvm13llvmdev13:
         CONFIG: osx_64_llvm13llvmdev13
         UPLOAD_PACKAGES: 'True'
@@ -25,12 +19,6 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_llvm16llvmdev16:
         CONFIG: osx_64_llvm16llvmdev16
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_llvm11llvmdev11:
-        CONFIG: osx_arm64_llvm11llvmdev11
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_llvm12llvmdev12:
-        CONFIG: osx_arm64_llvm12llvmdev12
         UPLOAD_PACKAGES: 'True'
       osx_arm64_llvm13llvmdev13:
         CONFIG: osx_arm64_llvm13llvmdev13
