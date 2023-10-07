@@ -8,14 +8,6 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_llvm11llvmdev11:
-        CONFIG: linux_64_llvm11llvmdev11
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_64_llvm12llvmdev12:
-        CONFIG: linux_64_llvm12llvmdev12
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_llvm13llvmdev13:
         CONFIG: linux_64_llvm13llvmdev13
         UPLOAD_PACKAGES: 'True'
@@ -32,14 +24,6 @@ jobs:
         CONFIG: linux_64_llvm16llvmdev16
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_aarch64_llvm11llvmdev11:
-        CONFIG: linux_aarch64_llvm11llvmdev11
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_aarch64_llvm12llvmdev12:
-        CONFIG: linux_aarch64_llvm12llvmdev12
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_aarch64_llvm13llvmdev13:
         CONFIG: linux_aarch64_llvm13llvmdev13
         UPLOAD_PACKAGES: 'True'
@@ -54,14 +38,6 @@ jobs:
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_aarch64_llvm16llvmdev16:
         CONFIG: linux_aarch64_llvm16llvmdev16
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_ppc64le_llvm11llvmdev11:
-        CONFIG: linux_ppc64le_llvm11llvmdev11
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
-      linux_ppc64le_llvm12llvmdev12:
-        CONFIG: linux_ppc64le_llvm12llvmdev12
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_ppc64le_llvm13llvmdev13:
