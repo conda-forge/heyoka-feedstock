@@ -22,7 +22,11 @@ MACOSX_SDK_VERSION:        # [osx and x86_64]
   - "10.12"                # [osx and x86_64]
 # NOTE: need GCC 11 on ppc64 due to this Boost bug:
 # https://github.com/boostorg/multiprecision/issues/419
+# On OSX, there are temporary build failures
+# with clang 16.
 c_compiler_version:        # [ppc64le]
   - 11                     # [ppc64le]
+  - 15                     # [osx]
 cxx_compiler_version:      # [ppc64le]
   - 11                     # [ppc64le]
+  - 15                     # [osx]
