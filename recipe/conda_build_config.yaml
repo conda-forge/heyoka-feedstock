@@ -3,11 +3,12 @@ llvmdev:
   - 14
   - 15
   - 16
+  - 17
 llvm:
   - 13
   - 14
   - 15
-  - 16
+  - 17
 zip_keys:
   - llvmdev
   - llvm
