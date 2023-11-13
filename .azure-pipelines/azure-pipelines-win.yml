@@ -20,6 +20,9 @@ jobs:
       win_64_llvm16llvmdev16:
         CONFIG: win_64_llvm16llvmdev16
         UPLOAD_PACKAGES: 'True'
+      win_64_llvm17llvmdev17:
+        CONFIG: win_64_llvm17llvmdev17
+        UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables:
     CONDA_BLD_PATH: D:\\bld\\
@@ -51,6 +54,9 @@ jobs:
         PYTHONUNBUFFERED: 1
         CONFIG: $(CONFIG)
         CI: azure
+        flow_run_id: azure_$(Build.BuildNumber).$(System.JobAttempt)
+        remote_url: $(Build.Repository.Uri)
+        sha: $(Build.SourceVersion)
         UPLOAD_PACKAGES: $(UPLOAD_PACKAGES)
         UPLOAD_TEMP: $(UPLOAD_TEMP)
         BINSTAR_TOKEN: $(BINSTAR_TOKEN)
