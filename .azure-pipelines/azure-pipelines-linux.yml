@@ -24,6 +24,10 @@ jobs:
         CONFIG: linux_64_llvm16llvmdev16
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_llvm17llvmdev17:
+        CONFIG: linux_64_llvm17llvmdev17
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_aarch64_llvm13llvmdev13:
         CONFIG: linux_aarch64_llvm13llvmdev13
         UPLOAD_PACKAGES: 'True'
@@ -38,6 +42,10 @@ jobs:
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_aarch64_llvm16llvmdev16:
         CONFIG: linux_aarch64_llvm16llvmdev16
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_aarch64_llvm17llvmdev17:
+        CONFIG: linux_aarch64_llvm17llvmdev17
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_ppc64le_llvm13llvmdev13:
@@ -56,6 +64,10 @@ jobs:
         CONFIG: linux_ppc64le_llvm16llvmdev16
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_ppc64le_llvm17llvmdev17:
+        CONFIG: linux_ppc64le_llvm17llvmdev17
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
   timeoutInMinutes: 360
 
   steps:
@@ -69,6 +81,9 @@ jobs:
 
   - script: |
         export CI=azure
+        export flow_run_id=azure_$(Build.BuildNumber).$(System.JobAttempt)
+        export remote_url=$(Build.Repository.Uri)
+        export sha=$(Build.SourceVersion)
         export GIT_BRANCH=$BUILD_SOURCEBRANCHNAME
         export FEEDSTOCK_NAME=$(basename ${BUILD_REPOSITORY_NAME})
         if [[ "${BUILD_REASON:-}" == "PullRequest" ]]; then
