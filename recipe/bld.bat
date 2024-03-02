@@ -12,7 +12,7 @@ cmake ^
     -DBoost_NO_BOOST_CMAKE=ON ^
     ..
 
-cmake --build . --config Release -j%CPU_COUNT%
+cmake --build . --config Release -j2
 
 set PATH=%PATH%;%CD%\Release
 
