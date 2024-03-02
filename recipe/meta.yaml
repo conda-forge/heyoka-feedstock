@@ -45,7 +45,7 @@ outputs:
         # Just leave it everywhere even if
         # it will result in some overlinking.
         - zstd
-        - fmt >=9,<=10
+        - fmt >=9,<11
         - spdlog
         - tbb-devel
         - sleef
@@ -85,7 +85,7 @@ outputs:
         - llvm
         - libboost-devel >=1.69
         - zstd
-        - fmt >=9,<=10
+        - fmt >=9,<11
         - spdlog
         - tbb-devel
         - sleef
