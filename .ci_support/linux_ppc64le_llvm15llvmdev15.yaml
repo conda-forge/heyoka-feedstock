@@ -14,12 +14,8 @@ cxx_compiler_version:
 - '11'
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
-fmt:
-- '10'
 gmp:
 - '6'
-libboost_devel:
-- '1.82'
 llvm:
 - '15'
 llvmdev:
