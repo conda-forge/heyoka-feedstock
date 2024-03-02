@@ -1,4 +1,4 @@
-{% set version = "3.2.0" %}
+{% set version = "4.0.0" %}
 
 package:
   name: heyoka
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/bluescarni/heyoka/archive/v{{ version }}.tar.gz
-  sha256: 37db24fbaf0e65d740ffb20f76ac1c8ab9fbd6893dc87dfd483c965b71dbf465
+  sha256: bc375271773993bd89d604a269c4931e54fb8508c8235397d47f0b60b78f3cdf
 
 build:
   number: 0
@@ -39,13 +39,13 @@ outputs:
       host:
         - llvmdev
         - llvm
-        - libboost-devel
+        - libboost-devel >=1.69
         # NOTE: this one is needed only
         # on some platforms and LLVM versions.
         # Just leave it everywhere even if
         # it will result in some overlinking.
         - zstd
-        - fmt
+        - fmt >=9,<=10
         - spdlog
         - tbb-devel
         - sleef
@@ -56,7 +56,7 @@ outputs:
         - xtensor-blas  # [not osx]
         - blas          # [not osx]
         - blas-devel    # [not osx]
-        - mppp >=0.27
+        - mppp =1.*
         - zlib          # [not ppc64le]
       run:
         - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
@@ -83,9 +83,9 @@ outputs:
       host:
         - llvmdev
         - llvm
-        - libboost-devel
+        - libboost-devel >=1.69
         - zstd
-        - fmt
+        - fmt >=9,<=10
         - spdlog
         - tbb-devel
         - sleef
@@ -96,7 +96,7 @@ outputs:
         - xtensor-blas  # [not osx]
         - blas          # [not osx]
         - blas-devel    # [not osx]
-        - mppp >=0.27
+        - mppp =1.*
         - zlib          # [not ppc64le]
         - {{ pin_subpackage('heyoka', exact=True) }}
       run:
