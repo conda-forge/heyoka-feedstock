@@ -9,7 +9,7 @@ source:
   sha256: 47608e785607782d896ae2347a29a143cdb7e5c602f48f5ea795cf682051dbee
 
 build:
-  number: 0
+  number: 1
   ignore_run_exports_from:
     # NOTE: on most platforms, except
     # PPC64, we are forcing static linking
@@ -39,7 +39,7 @@ outputs:
       host:
         - llvmdev
         - llvm
-        - libboost-devel >=1.69
+        - libboost-devel
         # NOTE: this one is needed only
         # on some platforms and LLVM versions.
         # Just leave it everywhere even if
@@ -83,7 +83,7 @@ outputs:
       host:
         - llvmdev
         - llvm
-        - libboost-devel >=1.69
+        - libboost-devel
         - zstd
         - fmt >=9,<11
         - spdlog
