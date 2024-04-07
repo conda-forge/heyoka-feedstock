@@ -20,6 +20,8 @@ cxx_compiler_version:
 - '16'
 gmp:
 - '6'
+libboost_devel:
+- '1.84'
 llvm:
 - '17'
 llvmdev:
