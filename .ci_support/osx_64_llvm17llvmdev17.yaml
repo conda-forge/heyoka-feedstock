@@ -6,6 +6,10 @@ c_compiler:
 - clang
 c_compiler_version:
 - '16'
+c_stdlib:
+- macosx_deployment_target
+c_stdlib_version:
+- '10.9'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -19,7 +23,7 @@ fmt:
 gmp:
 - '6'
 libboost_devel:
-- '1.82'
+- '1.84'
 llvm:
 - '17'
 llvmdev:
