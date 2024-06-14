@@ -46,6 +46,6 @@ zip_keys:
 - - llvmdev
   - llvm
 zlib:
-- '1.2'
+- '1'
 zstd:
 - '1.5'
