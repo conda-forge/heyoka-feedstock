@@ -7,6 +7,8 @@ package:
 source:
   url: https://github.com/bluescarni/heyoka/archive/v{{ version }}.tar.gz
   sha256: e9a4b5683a08706addc1b448e232f1e269d78586859fe3f4d93d4c5eee3bc8ae
+  patches:
+    - fixes.diff
 
 build:
   number: 0
