@@ -27,9 +27,9 @@ gmp:
 libboost_devel:
 - '1.84'
 llvm:
-- '13'
+- '18'
 llvmdev:
-- '13'
+- '18'
 mpfr:
 - '4'
 spdlog:

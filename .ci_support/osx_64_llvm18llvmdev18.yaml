@@ -23,9 +23,9 @@ gmp:
 libboost_devel:
 - '1.84'
 llvm:
-- '13'
+- '18'
 llvmdev:
-- '13'
+- '18'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 mpfr:
