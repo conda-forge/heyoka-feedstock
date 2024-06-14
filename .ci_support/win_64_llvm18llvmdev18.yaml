@@ -11,9 +11,9 @@ cxx_compiler:
 libboost_devel:
 - '1.84'
 llvm:
-- '13'
+- '18'
 llvmdev:
-- '13'
+- '18'
 mpfr:
 - '4'
 spdlog:
@@ -26,6 +26,6 @@ zip_keys:
 - - llvmdev
   - llvm
 zlib:
-- '1.2'
+- '1'
 zstd:
 - '1.5'

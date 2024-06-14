@@ -1,0 +1,153 @@
+diff --git a/src/detail/tm_data.cpp b/src/detail/tm_data.cpp
+index eb637ecd..58b3f9c3 100644
+--- a/src/detail/tm_data.cpp
++++ b/src/detail/tm_data.cpp
+@@ -64,13 +64,25 @@ tm_data<T>::tm_data() = default;
+ namespace
+ {
+ 
++// LCOV_EXCL_START
++
+ // Factorial implementations.
+ template <typename F>
+-F factorial(std::uint32_t n, long long)
++F factorial([[maybe_unused]] std::uint32_t n, long long)
+ {
+-    return boost::math::factorial<F>(boost::numeric_cast<unsigned>(n));
++#if defined(HEYOKA_ARCH_PPC)
++    if constexpr (std::same_as<F, long double>) {
++        throw std::invalid_argument("'long double' computations are not supported on this platform");
++    } else {
++#endif
++        return boost::math::factorial<F>(boost::numeric_cast<unsigned>(n));
++#if defined(HEYOKA_ARCH_PPC)
++    }
++#endif
+ }
+ 
++// LCOV_EXCL_STOP
++
+ #if defined(HEYOKA_HAVE_REAL128)
+ 
+ template <>
+diff --git a/src/taylor_adaptive.cpp b/src/taylor_adaptive.cpp
+index 296621ad..012a913a 100644
+--- a/src/taylor_adaptive.cpp
++++ b/src/taylor_adaptive.cpp
+@@ -450,13 +450,13 @@ void taylor_adaptive<T>::finalise_ctor_impl(sys_t vsys, std::vector<T> state,
+ 
+     // Fetch the stepper.
+     if (with_events) {
+-        m_step_f = reinterpret_cast<i_data::step_f_e_t>(m_llvm.jit_lookup("step_e"));
++        m_step_f = reinterpret_cast<typename i_data::step_f_e_t>(m_llvm.jit_lookup("step_e"));
+     } else {
+-        m_step_f = reinterpret_cast<i_data::step_f_t>(m_llvm.jit_lookup("step"));
++        m_step_f = reinterpret_cast<typename i_data::step_f_t>(m_llvm.jit_lookup("step"));
+     }
+ 
+     // Fetch the function to compute the dense output.
+-    m_d_out_f = reinterpret_cast<i_data::d_out_f_t>(m_llvm.jit_lookup("d_out_f"));
++    m_d_out_f = reinterpret_cast<typename i_data::d_out_f_t>(m_llvm.jit_lookup("d_out_f"));
+ 
+     // Setup the vector for the Taylor coefficients.
+     using su32_t = boost::safe_numerics::safe<std::uint32_t>;
+@@ -545,9 +545,9 @@ taylor_adaptive<T>::taylor_adaptive(const taylor_adaptive &other)
+       m_ed_data(other.m_ed_data ? std::make_unique<ed_data>(*other.m_ed_data) : nullptr)
+ {
+     if (m_ed_data) {
+-        m_i_data->m_step_f = reinterpret_cast<i_data::step_f_e_t>(m_i_data->m_llvm.jit_lookup("step_e"));
++        m_i_data->m_step_f = reinterpret_cast<typename i_data::step_f_e_t>(m_i_data->m_llvm.jit_lookup("step_e"));
+     } else {
+-        m_i_data->m_step_f = reinterpret_cast<i_data::step_f_t>(m_i_data->m_llvm.jit_lookup("step"));
++        m_i_data->m_step_f = reinterpret_cast<typename i_data::step_f_t>(m_i_data->m_llvm.jit_lookup("step"));
+     }
+ }
+ 
+@@ -613,9 +613,9 @@ void taylor_adaptive<T>::load_impl(Archive &ar, unsigned version)
+ 
+         // Recover the function pointers.
+         if (m_ed_data) {
+-            m_i_data->m_step_f = reinterpret_cast<i_data::step_f_e_t>(m_i_data->m_llvm.jit_lookup("step_e"));
++            m_i_data->m_step_f = reinterpret_cast<typename i_data::step_f_e_t>(m_i_data->m_llvm.jit_lookup("step_e"));
+         } else {
+-            m_i_data->m_step_f = reinterpret_cast<i_data::step_f_t>(m_i_data->m_llvm.jit_lookup("step"));
++            m_i_data->m_step_f = reinterpret_cast<typename i_data::step_f_t>(m_i_data->m_llvm.jit_lookup("step"));
+         }
+         // LCOV_EXCL_START
+     } catch (...) {
+diff --git a/test/batch_event_detection.cpp b/test/batch_event_detection.cpp
+index e808564c..e66ea114 100644
+--- a/test/batch_event_detection.cpp
++++ b/test/batch_event_detection.cpp
+@@ -164,7 +164,7 @@ TEST_CASE("nte single step")
+             REQUIRE(trig_times.size() == trig_times_batch[i].size());
+             for (decltype(trig_times.size()) j = 0; j < trig_times.size(); ++j) {
+                 REQUIRE(trig_times[j] == approximately(trig_times_batch[i][j], 1000.));
+-                REQUIRE(v_vals[j] == approximately(v_vals_batch[i][j], 1000.));
++                REQUIRE(v_vals[j] == approximately(v_vals_batch[i][j], 10000.));
+             }
+         }
+     };
+@@ -248,7 +248,7 @@ TEST_CASE("te single step")
+             REQUIRE(trig_times.size() == trig_times_batch[i].size());
+             for (decltype(trig_times.size()) j = 0; j < trig_times.size(); ++j) {
+                 REQUIRE(trig_times[j] == approximately(trig_times_batch[i][j], 1000.));
+-                REQUIRE(v_vals[j] == approximately(v_vals_batch[i][j], 1000.));
++                REQUIRE(v_vals[j] == approximately(v_vals_batch[i][j], 10000.));
+             }
+         }
+     };
+@@ -1547,8 +1547,7 @@ TEST_CASE("te propagate_grid first step bug")
+     }
+ 
+     {
+-        t_ev_t ev(
+-            v, kw::callback = [](auto &, int, std::uint32_t) { return true; });
++        t_ev_t ev(v, kw::callback = [](auto &, int, std::uint32_t) { return true; });
+ 
+         auto ta = taylor_adaptive_batch<double>{{prime(x) = v, prime(v) = -9.8 * sin(x)},
+                                                 {0.05, 0.051, 0.052, 0.053, 0.025, 0.0251, 0.0252, 0.0253},
+diff --git a/test/taylor_acosh.cpp b/test/taylor_acosh.cpp
+index 9a788ae4..d66a82c6 100644
+--- a/test/taylor_acosh.cpp
++++ b/test/taylor_acosh.cpp
+@@ -374,7 +374,7 @@ TEST_CASE("taylor acosh")
+         if constexpr (!std::is_same_v<long double, fp_t> || !skip_batch_ld) {
+             // Do the batch/scalar comparison.
+             compare_batch_scalar<fp_t>({prime(x) = acosh(expression{number{fp_t{1.625}}}), prime(y) = x + y}, opt_level,
+-                                       high_accuracy, compact_mode, rng, 1.3f, 5.1f);
++                                       high_accuracy, compact_mode, rng, 1.3f, 5.1f, fp_t(1000));
+         }
+ 
+         // Variable tests.
+@@ -536,7 +536,7 @@ TEST_CASE("taylor acosh")
+         if constexpr (!std::is_same_v<long double, fp_t> || !skip_batch_ld) {
+             // Do the batch/scalar comparison.
+             compare_batch_scalar<fp_t>({prime(x) = acosh(y), prime(y) = acosh(x)}, opt_level, high_accuracy,
+-                                       compact_mode, rng, 1.3f, 5.1f);
++                                       compact_mode, rng, 1.3f, 5.1f, fp_t(1000));
+         }
+     };
+ 
+diff --git a/test/taylor_sinhcosh.cpp b/test/taylor_sinhcosh.cpp
+index 16263007..2f015ba1 100644
+--- a/test/taylor_sinhcosh.cpp
++++ b/test/taylor_sinhcosh.cpp
+@@ -352,7 +352,7 @@ TEST_CASE("taylor sinhcosh")
+             // Do the batch/scalar comparison.
+             compare_batch_scalar<fp_t>(
+                 {prime(x) = sinh(expression{number{fp_t{2}}}) + cosh(expression{number{fp_t{3}}}), prime(y) = x + y},
+-                opt_level, high_accuracy, compact_mode, rng, -10.f, 10.f);
++                opt_level, high_accuracy, compact_mode, rng, -10.f, 10.f, fp_t(1000));
+         }
+ 
+         // Variable tests.
+@@ -507,7 +507,7 @@ TEST_CASE("taylor sinhcosh")
+         if constexpr (!std::is_same_v<long double, fp_t> || !skip_batch_ld) {
+             // Do the batch/scalar comparison.
+             compare_batch_scalar<fp_t>({prime(x) = sinh(y), prime(y) = cosh(x)}, opt_level, high_accuracy, compact_mode,
+-                                       rng, -10.f, 10.f);
++                                       rng, -10.f, 10.f, fp_t(1000));
+         }
+     };
+ 

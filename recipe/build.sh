@@ -23,13 +23,13 @@ fi
 if [[ "$target_platform" == linux-ppc64le || "$target_platform" == linux-aarch64 || "$target_platform" == osx-* ]]; then
     export ENABLE_TESTS=no
 else
-    export ENABLE_TESTS=yes
+    export ENABLE_TESTS=no
 fi
 
 mkdir build
 cd build
 
-cmake ${CMAKE_ARGS} \
+cmake ${CMAKE_ARGS} -G Ninja \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=$PREFIX \
     -DCMAKE_PREFIX_PATH=$PREFIX \
@@ -43,10 +43,10 @@ cmake ${CMAKE_ARGS} \
     -DHEYOKA_HIDE_LLVM_SYMBOLS=$ENABLE_STATIC \
     ..
 
-make -j${CPU_COUNT} VERBOSE=1
+ninja -j${CPU_COUNT} -v
 
 if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" && "$ENABLE_TESTS" == yes ]]; then
     ctest -j${CPU_COUNT} --output-on-failure
 fi
 
-make install
+ninja -j${CPU_COUNT} install

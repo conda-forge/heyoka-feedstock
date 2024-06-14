@@ -1,20 +1,18 @@
 llvmdev:
-  - 13
   - 14
   - 15
   - 16
   - 17
+  - 18
 llvm:
-  - 13
   - 14
   - 15
   - 16
   - 17
+  - 18
 zip_keys:
   - llvmdev
   - llvm
-MACOSX_SDK_VERSION:        # [osx and x86_64]
-  - "10.12"                # [osx and x86_64]
 # NOTE: need GCC 11 on ppc64 due to this Boost bug:
 # https://github.com/boostorg/multiprecision/issues/419
 c_compiler_version:        # [ppc64le]
