@@ -49,4 +49,4 @@ if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" && "$ENABLE_TESTS" == yes ]]; th
     ctest -j${CPU_COUNT} --output-on-failure
 fi
 
-make install
+ninja -j${CPU_COUNT} install
