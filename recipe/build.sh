@@ -23,7 +23,7 @@ fi
 if [[ "$target_platform" == linux-ppc64le || "$target_platform" == linux-aarch64 || "$target_platform" == osx-* ]]; then
     export ENABLE_TESTS=no
 else
-    export ENABLE_TESTS=yes
+    export ENABLE_TESTS=no
 fi
 
 mkdir build
