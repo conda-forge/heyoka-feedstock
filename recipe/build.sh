@@ -29,7 +29,7 @@ fi
 mkdir build
 cd build
 
-cmake ${CMAKE_ARGS} \
+cmake ${CMAKE_ARGS} -G Ninja \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=$PREFIX \
     -DCMAKE_PREFIX_PATH=$PREFIX \
@@ -43,7 +43,7 @@ cmake ${CMAKE_ARGS} \
     -DHEYOKA_HIDE_LLVM_SYMBOLS=$ENABLE_STATIC \
     ..
 
-make -j${CPU_COUNT} VERBOSE=1
+ninja -j${CPU_COUNT} -v
 
 if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" && "$ENABLE_TESTS" == yes ]]; then
     ctest -j${CPU_COUNT} --output-on-failure
