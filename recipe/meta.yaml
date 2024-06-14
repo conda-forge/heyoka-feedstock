@@ -1,4 +1,4 @@
-{% set version = "4.0.3" %}
+{% set version = "5.0.0" %}
 
 package:
   name: heyoka
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/bluescarni/heyoka/archive/v{{ version }}.tar.gz
-  sha256: 47608e785607782d896ae2347a29a143cdb7e5c602f48f5ea795cf682051dbee
+  sha256: e9a4b5683a08706addc1b448e232f1e269d78586859fe3f4d93d4c5eee3bc8ae
 
 build:
-  number: 2
+  number: 0
   ignore_run_exports_from:
     # NOTE: on most platforms, except
     # PPC64, we are forcing static linking
