@@ -32,8 +32,6 @@ spdlog:
 - '1.13'
 target_platform:
 - linux-ppc64le
-tbb_devel:
-- '2021'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
