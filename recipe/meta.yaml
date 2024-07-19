@@ -11,7 +11,7 @@ source:
     - fixes.diff
 
 build:
-  number: 0
+  number: 1
   ignore_run_exports_from:
     # NOTE: on most platforms, except
     # PPC64, we are forcing static linking
@@ -51,7 +51,9 @@ outputs:
         - zstd
         - fmt >=9,<11
         - spdlog
-        - tbb-devel
+        # NOTE: pin due to this bug:
+        # https://github.com/oneapi-src/oneTBB/issues/1417
+        - tbb-devel =2021.10.0
         - sleef
         - gmp           # [unix]
         - mpir          # [win]
@@ -89,7 +91,9 @@ outputs:
         - zstd
         - fmt >=9,<11
         - spdlog
-        - tbb-devel
+        # NOTE: pin due to this bug:
+        # https://github.com/oneapi-src/oneTBB/issues/1417
+        - tbb-devel =2021.10.0
         - sleef
         - gmp           # [unix]
         - mpir          # [win]
