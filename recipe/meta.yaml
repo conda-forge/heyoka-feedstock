@@ -1,4 +1,4 @@
-{% set version = "5.0.0" %}
+{% set version = "5.1.0" %}
 
 package:
   name: heyoka
@@ -6,12 +6,10 @@ package:
 
 source:
   url: https://github.com/bluescarni/heyoka/archive/v{{ version }}.tar.gz
-  sha256: e9a4b5683a08706addc1b448e232f1e269d78586859fe3f4d93d4c5eee3bc8ae
-  patches:
-    - fixes.diff
+  sha256: dd405328ace718865ae2690384fbf5f7ee4d03ab6821b908e7d0ca0a02c35e14
 
 build:
-  number: 1
+  number: 0
   ignore_run_exports_from:
     # NOTE: on most platforms, except
     # PPC64, we are forcing static linking
@@ -49,8 +47,10 @@ outputs:
         # Just leave it everywhere even if
         # it will result in some overlinking.
         - zstd
+        # NOTE: need some coordination between fmt and spdlog
+        # versions.
         - fmt >=9,<11
-        - spdlog
+        - spdlog =1.13.*
         # NOTE: pin due to this bug:
         # https://github.com/oneapi-src/oneTBB/issues/1417
         - tbb-devel =2021.10.0
@@ -90,9 +90,7 @@ outputs:
         - libboost-devel
         - zstd
         - fmt >=9,<11
-        - spdlog
-        # NOTE: pin due to this bug:
-        # https://github.com/oneapi-src/oneTBB/issues/1417
+        - spdlog =1.13.*
         - tbb-devel =2021.10.0
         - sleef
         - gmp           # [unix]
