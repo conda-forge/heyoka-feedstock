@@ -9,7 +9,7 @@ source:
   sha256: dd405328ace718865ae2690384fbf5f7ee4d03ab6821b908e7d0ca0a02c35e14
 
 build:
-  number: 0
+  number: 1
   ignore_run_exports_from:
     # NOTE: on most platforms, except
     # PPC64, we are forcing static linking
@@ -56,7 +56,7 @@ outputs:
         - tbb-devel =2021.10.0
         - sleef
         - gmp           # [unix]
-        - mpir          # [win]
+        - gmp          # [win]
         - mpfr
         - xtensor       # [not osx]
         - xtensor-blas  # [not osx]
@@ -94,7 +94,7 @@ outputs:
         - tbb-devel =2021.10.0
         - sleef
         - gmp           # [unix]
-        - mpir          # [win]
+        - gmp          # [win]
         - mpfr
         - xtensor       # [not osx]
         - xtensor-blas  # [not osx]
