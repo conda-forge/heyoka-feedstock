@@ -47,10 +47,8 @@ outputs:
         # Just leave it everywhere even if
         # it will result in some overlinking.
         - zstd
-        # NOTE: need some coordination between fmt and spdlog
-        # versions.
-        - fmt >=9,<11
-        - spdlog =1.13.*
+        - fmt
+        - spdlog
         # NOTE: pin due to this bug:
         # https://github.com/oneapi-src/oneTBB/issues/1417
         - tbb-devel =2021.10.0
@@ -89,8 +87,8 @@ outputs:
         - llvm
         - libboost-devel
         - zstd
-        - fmt >=9,<11
-        - spdlog =1.13.*
+        - fmt
+        - spdlog
         - tbb-devel =2021.10.0
         - sleef
         - gmp           # [unix]
