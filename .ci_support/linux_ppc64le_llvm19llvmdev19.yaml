@@ -18,18 +18,24 @@ cxx_compiler_version:
 - '11'
 docker_image:
 - quay.io/condaforge/linux-anvil-cos7-x86_64
+fmt:
+- '11'
 gmp:
 - '6'
 libboost_devel:
-- '1.84'
+- '1.86'
 llvm:
-- '14'
+- '19'
 llvmdev:
-- '14'
+- '19'
 mpfr:
 - '4'
+spdlog:
+- '1.14'
 target_platform:
 - linux-ppc64le
+tbb_devel:
+- '2021'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version

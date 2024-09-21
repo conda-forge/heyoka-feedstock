@@ -8,7 +8,6 @@ cmake ^
     -DHEYOKA_BUILD_TESTS=yes ^
     -DHEYOKA_WITH_SLEEF=yes ^
     -DHEYOKA_WITH_MPPP=yes ^
-    -DBoost_NO_BOOST_CMAKE=ON ^
     ..
 
 cmake --build . --config Release -j1

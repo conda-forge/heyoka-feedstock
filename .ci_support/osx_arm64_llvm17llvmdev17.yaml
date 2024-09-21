@@ -5,7 +5,7 @@ MACOSX_SDK_VERSION:
 c_compiler:
 - clang
 c_compiler_version:
-- '16'
+- '17'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -17,11 +17,13 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '16'
+- '17'
+fmt:
+- '11'
 gmp:
 - '6'
 libboost_devel:
-- '1.84'
+- '1.86'
 llvm:
 - '17'
 llvmdev:
@@ -30,8 +32,12 @@ macos_machine:
 - arm64-apple-darwin20.0.0
 mpfr:
 - '4'
+spdlog:
+- '1.14'
 target_platform:
 - osx-arm64
+tbb_devel:
+- '2021'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
