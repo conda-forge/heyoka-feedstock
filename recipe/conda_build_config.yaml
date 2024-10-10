@@ -13,15 +13,9 @@ llvm:
 zip_keys:
   - llvmdev
   - llvm
-# NOTE: need GCC 11 on ppc64 due to this Boost bug:
-# https://github.com/boostorg/multiprecision/issues/419
 # NOTE: pin clang to version 16 on OSX x86_64
-# for the time being due to an ABI incompatibility
-# in Boost most likely arising from a compiler version
-# mismatch.
-c_compiler_version:        # [ppc64le or (osx and x86_64)]
-  - 11                     # [ppc64le]
-  - 16                     # [osx and x86_64]
-cxx_compiler_version:      # [ppc64le or (osx and x86_64)]
-  - 11                     # [ppc64le]
-  - 16                     # [osx and x86_64]
+# for the time being, due to what looks like a clang-19 bug.
+c_compiler_version:        # [osx and x86_64]
+  - 18                     # [osx and x86_64]
+cxx_compiler_version:      # [osx and x86_64]
+  - 18                     # [osx and x86_64]
