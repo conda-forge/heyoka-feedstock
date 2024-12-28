@@ -1,4 +1,4 @@
-{% set version = "6.1.0" %}
+{% set version = "7.0.0" %}
 
 package:
   name: heyoka
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/bluescarni/heyoka/archive/v{{ version }}.tar.gz
-  sha256: a0f01afb1fb4f93fdc41b2a8dfebf9f9ddd45b28b7b373c4ef9355aeda7107b4
+  sha256: 348c14195c1bdcaf37e7d49a5eed757bbd108ca272d56594e535b9091bfaa655
 
 build:
-  number: 1
+  number: 0
   ignore_run_exports_from:
     # NOTE: on most platforms, except
     # PPC64, we are forcing static linking
@@ -51,14 +51,13 @@ outputs:
         - spdlog
         - tbb-devel
         - sleef
-        - gmp           # [unix]
-        - mpir          # [win]
+        - gmp
         - mpfr
         - xtensor       # [not osx]
         - xtensor-blas  # [not osx]
         - blas          # [not osx]
         - blas-devel    # [not osx]
-        - mppp =1.*
+        - mppp =2.*
         - zlib          # [not ppc64le]
     build:
       run_exports:
@@ -89,14 +88,13 @@ outputs:
         - spdlog
         - tbb-devel
         - sleef
-        - gmp           # [unix]
-        - mpir          # [win]
+        - gmp
         - mpfr
         - xtensor       # [not osx]
         - xtensor-blas  # [not osx]
         - blas          # [not osx]
         - blas-devel    # [not osx]
-        - mppp =1.*
+        - mppp =2.*
         - zlib          # [not ppc64le]
         - {{ pin_subpackage('heyoka', exact=True) }}
       run:
