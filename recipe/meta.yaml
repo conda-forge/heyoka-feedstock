@@ -9,7 +9,7 @@ source:
   sha256: 348c14195c1bdcaf37e7d49a5eed757bbd108ca272d56594e535b9091bfaa655
 
 build:
-  number: 0
+  number: 1
   ignore_run_exports_from:
     # NOTE: on most platforms, except
     # PPC64, we are forcing static linking
