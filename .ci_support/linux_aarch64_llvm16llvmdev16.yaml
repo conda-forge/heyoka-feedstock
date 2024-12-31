@@ -31,7 +31,7 @@ llvmdev:
 mpfr:
 - '4'
 spdlog:
-- '1.14'
+- '1.15'
 target_platform:
 - linux-aarch64
 tbb_devel:
