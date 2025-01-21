@@ -20,6 +20,8 @@ llvmdev:
 - '16'
 mpfr:
 - '4'
+mppp:
+- '2.0'
 spdlog:
 - '1.15'
 target_platform:
