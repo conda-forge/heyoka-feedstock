@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - vs2019
 fmt:
-- '11'
+- '11.1'
 gmp:
 - '6'
 libboost_devel:
