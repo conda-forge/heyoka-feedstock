@@ -22,6 +22,8 @@ mpfr:
 - '4'
 mppp:
 - '2.0'
+openssl:
+- '3'
 spdlog:
 - '1.15'
 target_platform:

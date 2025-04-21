@@ -1,15 +1,15 @@
 llvmdev:
-  - 15
   - 16
   - 17
   - 18
   - 19
+  - 20
 llvm:
-  - 15
   - 16
   - 17
   - 18
   - 19
+  - 20
 zip_keys:
   - llvmdev
   - llvm
