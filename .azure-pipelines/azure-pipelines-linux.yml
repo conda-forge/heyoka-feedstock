@@ -8,10 +8,6 @@ jobs:
     vmImage: ubuntu-latest
   strategy:
     matrix:
-      linux_64_llvm15llvmdev15:
-        CONFIG: linux_64_llvm15llvmdev15
-        UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_64_llvm16llvmdev16:
         CONFIG: linux_64_llvm16llvmdev16
         UPLOAD_PACKAGES: 'True'
@@ -28,8 +24,8 @@ jobs:
         CONFIG: linux_64_llvm19llvmdev19
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_aarch64_llvm15llvmdev15:
-        CONFIG: linux_aarch64_llvm15llvmdev15
+      linux_64_llvm20llvmdev20:
+        CONFIG: linux_64_llvm20llvmdev20
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_aarch64_llvm16llvmdev16:
@@ -48,8 +44,8 @@ jobs:
         CONFIG: linux_aarch64_llvm19llvmdev19
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
-      linux_ppc64le_llvm15llvmdev15:
-        CONFIG: linux_ppc64le_llvm15llvmdev15
+      linux_aarch64_llvm20llvmdev20:
+        CONFIG: linux_aarch64_llvm20llvmdev20
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_ppc64le_llvm16llvmdev16:
@@ -66,6 +62,10 @@ jobs:
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
       linux_ppc64le_llvm19llvmdev19:
         CONFIG: linux_ppc64le_llvm19llvmdev19
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
+      linux_ppc64le_llvm20llvmdev20:
+        CONFIG: linux_ppc64le_llvm20llvmdev20
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:alma9
   timeoutInMinutes: 360
