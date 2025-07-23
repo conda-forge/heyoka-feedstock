@@ -23,7 +23,7 @@ fmt:
 gmp:
 - '6'
 libboost_devel:
-- '1.86'
+- '1.88'
 llvm:
 - '20'
 llvmdev:
