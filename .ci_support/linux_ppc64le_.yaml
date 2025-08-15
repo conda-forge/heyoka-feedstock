@@ -24,10 +24,6 @@ gmp:
 - '6'
 libboost_devel:
 - '1.86'
-llvm:
-- '16'
-llvmdev:
-- '16'
 mpfr:
 - '4'
 mppp:
@@ -37,15 +33,11 @@ openssl:
 spdlog:
 - '1.15'
 target_platform:
-- linux-64
+- linux-ppc64le
 tbb_devel:
 - '2021'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
-- - llvmdev
-  - llvm
-zlib:
-- '1'
 zstd:
 - '1.5'

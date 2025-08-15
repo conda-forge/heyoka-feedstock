@@ -27,213 +27,45 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_llvm16llvmdev16</td>
+              <td>linux_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_llvm16llvmdev16" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_llvm17llvmdev17</td>
+              <td>linux_aarch64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_llvm17llvmdev17" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_llvm18llvmdev18</td>
+              <td>linux_ppc64le</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_llvm18llvmdev18" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_llvm19llvmdev19</td>
+              <td>osx_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_llvm19llvmdev19" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_llvm20llvmdev20</td>
+              <td>osx_arm64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_llvm20llvmdev20" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_llvm16llvmdev16</td>
+              <td>win_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_llvm16llvmdev16" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_llvm17llvmdev17</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_llvm17llvmdev17" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_llvm18llvmdev18</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_llvm18llvmdev18" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_llvm19llvmdev19</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_llvm19llvmdev19" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_llvm20llvmdev20</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_llvm20llvmdev20" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_llvm16llvmdev16</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_llvm16llvmdev16" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_llvm17llvmdev17</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_llvm17llvmdev17" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_llvm18llvmdev18</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_llvm18llvmdev18" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_llvm19llvmdev19</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_llvm19llvmdev19" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_llvm20llvmdev20</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_llvm20llvmdev20" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_llvm16llvmdev16</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_llvm16llvmdev16" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_llvm17llvmdev17</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_llvm17llvmdev17" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_llvm18llvmdev18</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_llvm18llvmdev18" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_llvm19llvmdev19</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_llvm19llvmdev19" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_llvm20llvmdev20</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_llvm20llvmdev20" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_llvm16llvmdev16</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_llvm16llvmdev16" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_llvm17llvmdev17</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_llvm17llvmdev17" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_llvm18llvmdev18</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_llvm18llvmdev18" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_llvm19llvmdev19</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_llvm19llvmdev19" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_llvm20llvmdev20</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_llvm20llvmdev20" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_llvm16llvmdev16</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=win&configuration=win%20win_64_llvm16llvmdev16" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_llvm17llvmdev17</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=win&configuration=win%20win_64_llvm17llvmdev17" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_llvm18llvmdev18</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=win&configuration=win%20win_64_llvm18llvmdev18" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_llvm19llvmdev19</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=win&configuration=win%20win_64_llvm19llvmdev19" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_llvm20llvmdev20</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11487&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=win&configuration=win%20win_64_llvm20llvmdev20" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/heyoka-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
                 </a>
               </td>
             </tr>
@@ -250,11 +82,6 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-heyoka-green.svg)](https://anaconda.org/conda-forge/heyoka) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/heyoka.svg)](https://anaconda.org/conda-forge/heyoka) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/heyoka.svg)](https://anaconda.org/conda-forge/heyoka) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/heyoka.svg)](https://anaconda.org/conda-forge/heyoka) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-heyoka--llvm--16-green.svg)](https://anaconda.org/conda-forge/heyoka-llvm-16) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/heyoka-llvm-16.svg)](https://anaconda.org/conda-forge/heyoka-llvm-16) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/heyoka-llvm-16.svg)](https://anaconda.org/conda-forge/heyoka-llvm-16) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/heyoka-llvm-16.svg)](https://anaconda.org/conda-forge/heyoka-llvm-16) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-heyoka--llvm--17-green.svg)](https://anaconda.org/conda-forge/heyoka-llvm-17) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/heyoka-llvm-17.svg)](https://anaconda.org/conda-forge/heyoka-llvm-17) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/heyoka-llvm-17.svg)](https://anaconda.org/conda-forge/heyoka-llvm-17) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/heyoka-llvm-17.svg)](https://anaconda.org/conda-forge/heyoka-llvm-17) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-heyoka--llvm--18-green.svg)](https://anaconda.org/conda-forge/heyoka-llvm-18) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/heyoka-llvm-18.svg)](https://anaconda.org/conda-forge/heyoka-llvm-18) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/heyoka-llvm-18.svg)](https://anaconda.org/conda-forge/heyoka-llvm-18) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/heyoka-llvm-18.svg)](https://anaconda.org/conda-forge/heyoka-llvm-18) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-heyoka--llvm--19-green.svg)](https://anaconda.org/conda-forge/heyoka-llvm-19) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/heyoka-llvm-19.svg)](https://anaconda.org/conda-forge/heyoka-llvm-19) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/heyoka-llvm-19.svg)](https://anaconda.org/conda-forge/heyoka-llvm-19) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/heyoka-llvm-19.svg)](https://anaconda.org/conda-forge/heyoka-llvm-19) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-heyoka--llvm--20-green.svg)](https://anaconda.org/conda-forge/heyoka-llvm-20) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/heyoka-llvm-20.svg)](https://anaconda.org/conda-forge/heyoka-llvm-20) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/heyoka-llvm-20.svg)](https://anaconda.org/conda-forge/heyoka-llvm-20) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/heyoka-llvm-20.svg)](https://anaconda.org/conda-forge/heyoka-llvm-20) |
 
 Installing heyoka
 =================
@@ -266,16 +93,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `heyoka, heyoka-llvm-16, heyoka-llvm-17, heyoka-llvm-18, heyoka-llvm-19, heyoka-llvm-20` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `heyoka` can be installed with `conda`:
 
 ```
-conda install heyoka heyoka-llvm-16 heyoka-llvm-17 heyoka-llvm-18 heyoka-llvm-19 heyoka-llvm-20
+conda install heyoka
 ```
 
 or with `mamba`:
 
 ```
-mamba install heyoka heyoka-llvm-16 heyoka-llvm-17 heyoka-llvm-18 heyoka-llvm-19 heyoka-llvm-20
+mamba install heyoka
 ```
 
 It is possible to list all of the versions of `heyoka` available on your platform with `conda`:

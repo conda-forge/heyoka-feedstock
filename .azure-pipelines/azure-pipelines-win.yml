@@ -8,20 +8,8 @@ jobs:
     vmImage: windows-2022
   strategy:
     matrix:
-      win_64_llvm16llvmdev16:
-        CONFIG: win_64_llvm16llvmdev16
-        UPLOAD_PACKAGES: 'True'
-      win_64_llvm17llvmdev17:
-        CONFIG: win_64_llvm17llvmdev17
-        UPLOAD_PACKAGES: 'True'
-      win_64_llvm18llvmdev18:
-        CONFIG: win_64_llvm18llvmdev18
-        UPLOAD_PACKAGES: 'True'
-      win_64_llvm19llvmdev19:
-        CONFIG: win_64_llvm19llvmdev19
-        UPLOAD_PACKAGES: 'True'
-      win_64_llvm20llvmdev20:
-        CONFIG: win_64_llvm20llvmdev20
+      win_64_:
+        CONFIG: win_64_
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables:
