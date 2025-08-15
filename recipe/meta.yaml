@@ -37,8 +37,9 @@ requirements:
     - cmake >=3.20.0
     - ninja       # [unix]
   host:
+    # NOTE: we aim to use the latest LLVM version here.
     - llvmdev ==20.*
-    - llvm  ==20.*
+    - llvm ==20.*
     - libboost-devel
     # NOTE: this one is needed only
     # on some platforms and LLVM versions.
