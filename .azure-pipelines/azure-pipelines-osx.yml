@@ -8,35 +8,11 @@ jobs:
     vmImage: macOS-13
   strategy:
     matrix:
-      osx_64_llvm16llvmdev16:
-        CONFIG: osx_64_llvm16llvmdev16
+      osx_64_:
+        CONFIG: osx_64_
         UPLOAD_PACKAGES: 'True'
-      osx_64_llvm17llvmdev17:
-        CONFIG: osx_64_llvm17llvmdev17
-        UPLOAD_PACKAGES: 'True'
-      osx_64_llvm18llvmdev18:
-        CONFIG: osx_64_llvm18llvmdev18
-        UPLOAD_PACKAGES: 'True'
-      osx_64_llvm19llvmdev19:
-        CONFIG: osx_64_llvm19llvmdev19
-        UPLOAD_PACKAGES: 'True'
-      osx_64_llvm20llvmdev20:
-        CONFIG: osx_64_llvm20llvmdev20
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_llvm16llvmdev16:
-        CONFIG: osx_arm64_llvm16llvmdev16
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_llvm17llvmdev17:
-        CONFIG: osx_arm64_llvm17llvmdev17
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_llvm18llvmdev18:
-        CONFIG: osx_arm64_llvm18llvmdev18
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_llvm19llvmdev19:
-        CONFIG: osx_arm64_llvm19llvmdev19
-        UPLOAD_PACKAGES: 'True'
-      osx_arm64_llvm20llvmdev20:
-        CONFIG: osx_arm64_llvm20llvmdev20
+      osx_arm64_:
+        CONFIG: osx_arm64_
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables: {}

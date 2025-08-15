@@ -14,10 +14,6 @@ gmp:
 - '6'
 libboost_devel:
 - '1.86'
-llvm:
-- '20'
-llvmdev:
-- '20'
 mpfr:
 - '4'
 mppp:
@@ -30,9 +26,6 @@ target_platform:
 - win-64
 tbb_devel:
 - '2021'
-zip_keys:
-- - llvmdev
-  - llvm
 zlib:
 - '1'
 zstd:
