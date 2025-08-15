@@ -1,7 +1,7 @@
 {% set version = "7.3.0" %}
 
 package:
-  name: heyoka-split
+  name: heyoka
   version: {{ version }}
 
 source:
@@ -10,6 +10,9 @@ source:
 
 build:
   number: 2
+  run_exports:
+    # SO name changes at minor rev bumps.
+    - {{ pin_subpackage('heyoka', max_pin='x.x') }}
   ignore_run_exports_from:
     # NOTE: on most platforms, except
     # PPC64, we are forcing static linking
@@ -31,82 +34,36 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
-    - cmake >=3.18.0
+    - cmake >=3.20.0
     - ninja       # [unix]
-    - make        # [unix]
+  host:
+    - llvmdev ==20.*
+    - llvm  ==20.*
+    - libboost-devel
+    # NOTE: this one is needed only
+    # on some platforms and LLVM versions.
+    # Just leave it everywhere even if
+    # it will result in some overlinking.
+    - zstd
+    - fmt
+    - spdlog
+    - tbb-devel
+    - sleef
+    - gmp
+    - mpfr
+    - openssl
+    - xtensor       # [not osx]
+    - xtensor-blas  # [not osx]
+    - blas          # [not osx]
+    - blas-devel    # [not osx]
+    - mppp
+    - zlib          # [not ppc64le]
+  run:
 
-outputs:
-  - name: heyoka
-    requirements:
-      host:
-        - llvmdev
-        - llvm
-        - libboost-devel
-        # NOTE: this one is needed only
-        # on some platforms and LLVM versions.
-        # Just leave it everywhere even if
-        # it will result in some overlinking.
-        - zstd
-        - fmt
-        - spdlog
-        - tbb-devel
-        - sleef
-        - gmp
-        - mpfr
-        - openssl
-        - xtensor       # [not osx]
-        - xtensor-blas  # [not osx]
-        - blas          # [not osx]
-        - blas-devel    # [not osx]
-        - mppp
-        - zlib          # [not ppc64le]
-    build:
-      run_exports:
-        # SO name changes at minor rev bumps.
-        - {{ pin_subpackage('heyoka', max_pin='x.x') }}
-    files:
-      - lib/libheyoka*{{ SHLIB_EXT }}   # [not win]
-      - lib/libheyoka.so.*              # [linux]
-      - lib/libheyoka.*.dylib           # [osx]
-      - Library/bin/heyoka.dll          # [win]
-      - include/heyoka                  # [not win]
-      - lib/cmake/heyoka                # [not win]
-      - Library/include/heyoka          # [win]
-      - Library/lib/heyoka.lib          # [win]
-      - Library/lib/cmake/heyoka        # [win]
-    test:
-      commands:
-        - test -f $PREFIX/include/heyoka/heyoka.hpp               # [unix]
-        - if not exist %PREFIX%\\Library\\include\\heyoka\\heyoka.hpp exit 1   # [win]
-  - name: heyoka-llvm-{{ llvmdev }}
-    requirements:
-      host:
-        - llvmdev
-        - llvm
-        - libboost-devel
-        - zstd
-        - fmt
-        - spdlog
-        - tbb-devel
-        - sleef
-        - gmp
-        - mpfr
-        - openssl
-        - xtensor       # [not osx]
-        - xtensor-blas  # [not osx]
-        - blas          # [not osx]
-        - blas-devel    # [not osx]
-        - mppp
-        - zlib          # [not ppc64le]
-        - {{ pin_subpackage('heyoka', exact=True) }}
-      run:
-        - {{ pin_subpackage('heyoka', exact=True) }}
-    build:
-      run_exports:
-        - {{ pin_subpackage('heyoka', exact=True) }}
-    test:
-      commands:
-        - test true               # [unix]
+test:
+  commands:
+    - test -f $PREFIX/include/heyoka/heyoka.hpp               # [unix]
+    - if not exist %PREFIX%\\Library\\include\\heyoka\\heyoka.hpp exit 1   # [win]
 
 about:
   home: https://bluescarni.github.io/heyoka/
