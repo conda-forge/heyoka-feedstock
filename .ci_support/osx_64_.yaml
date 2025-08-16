@@ -23,7 +23,7 @@ fmt:
 gmp:
 - '6'
 libboost_devel:
-- '1.86'
+- '1.88'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 mpfr:
