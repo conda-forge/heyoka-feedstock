@@ -38,8 +38,8 @@ requirements:
     - ninja       # [unix]
   host:
     # NOTE: we aim to use the latest LLVM version here.
-    - llvmdev ==20.*
-    - llvm ==20.*
+    - llvmdev ==21.*
+    - llvm ==21.*
     - libboost-devel
     # NOTE: this one is needed only
     # on some platforms and LLVM versions.
