@@ -1,4 +1,4 @@
-{% set version = "7.7.0" %}
+{% set version = "7.8.0" %}
 
 package:
   name: heyoka
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/bluescarni/heyoka/archive/v{{ version }}.tar.gz
-  sha256: aa451ea8261c363544bd6f21ea926094bdc1236ba664ed0028841489c9f23c62
+  sha256: bf7a3c49bca10db4d7670d12f3b07e410501ccdfd3512e2fdef1d3bf37a13883
 
 build:
   number: 0
