@@ -27,13 +27,13 @@ mpfr:
 mppp:
 - '2.0'
 openssl:
-- '3'
+- '3.5'
 spdlog:
 - '1.16'
 target_platform:
 - linux-ppc64le
 tbb_devel:
-- '2021'
+- '2022'
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
