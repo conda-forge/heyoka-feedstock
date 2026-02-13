@@ -1,4 +1,4 @@
-{% set version = "7.9.0" %}
+{% set version = "7.9.1" %}
 
 package:
   name: heyoka
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/bluescarni/heyoka/archive/v{{ version }}.tar.gz
-  sha256: c811c1579581883a4b143877403a4b7519dd7ae09320867f05c17c3e31a672a4
+  sha256: 9b5f19ad851fa4b69470d685d18f7d42b072c76d8cd5aef525a20e94462b9a80
 
 build:
-  number: 1
+  number: 0
   run_exports:
     # SO name changes at minor rev bumps.
     - {{ pin_subpackage('heyoka', max_pin='x.x') }}
