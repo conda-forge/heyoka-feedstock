@@ -22,6 +22,8 @@ openssl:
 - '3.5'
 spdlog:
 - '1.17'
+sqlite:
+- '3'
 target_platform:
 - win-64
 tbb_devel:
