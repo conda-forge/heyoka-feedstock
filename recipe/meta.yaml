@@ -1,4 +1,4 @@
-{% set version = "7.9.1" %}
+{% set version = "7.10.0" %}
 
 package:
   name: heyoka
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/bluescarni/heyoka/archive/v{{ version }}.tar.gz
-  sha256: 9b5f19ad851fa4b69470d685d18f7d42b072c76d8cd5aef525a20e94462b9a80
+  sha256: 32404b6e8e0697c5ee3e0debda523eb98c57485bfe39584715ca105b8e6377a1
 
 build:
   number: 0
@@ -38,8 +38,8 @@ requirements:
     - ninja       # [unix]
   host:
     # NOTE: we aim to use the latest LLVM version here.
-    - llvmdev ==21.*
-    - llvm ==21.*
+    - llvmdev ==22.*
+    - llvm ==22.*
     - libboost-devel
     # NOTE: this one is needed only
     # on some platforms and LLVM versions.
@@ -52,6 +52,7 @@ requirements:
     - sleef
     - gmp
     - mpfr
+    - sqlite
     - openssl
     - xtensor       # [not osx]
     - xtensor-blas  # [not osx]
