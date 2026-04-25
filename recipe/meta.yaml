@@ -9,7 +9,7 @@ source:
   sha256: 32404b6e8e0697c5ee3e0debda523eb98c57485bfe39584715ca105b8e6377a1
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # SO name changes at minor rev bumps.
     - {{ pin_subpackage('heyoka', max_pin='x.x') }}
