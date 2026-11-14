@@ -7,7 +7,6 @@ cmake ^
     -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
     -DHEYOKA_BUILD_TESTS=yes ^
     -DHEYOKA_WITH_SLEEF=yes ^
-    -DHEYOKA_WITH_MPPP=yes ^
     ..
 
 cmake --build . --config Release -j1
